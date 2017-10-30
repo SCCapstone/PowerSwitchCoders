@@ -4,7 +4,7 @@ android {
     compileSdkVersion 23
     buildToolsVersion '26.0.2'
     defaultConfig {
-        applicationId "com.example.user.mysecondapp"
+        applicationId "com.example.user.powerswitchdemo"
         minSdkVersion 15
         targetSdkVersion 23
         versionCode 1
