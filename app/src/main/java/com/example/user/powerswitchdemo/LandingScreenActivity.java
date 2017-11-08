@@ -1,4 +1,4 @@
-package com.example.user.mysecondapp;
+package com.example.user.powerswitchdemo;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;

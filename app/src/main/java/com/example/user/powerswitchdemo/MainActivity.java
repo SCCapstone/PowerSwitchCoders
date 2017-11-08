@@ -11,7 +11,7 @@ import static android.provider.AlarmClock.EXTRA_MESSAGE;
 
 public class MainActivity extends AppCompatActivity {
 
-    public final static String EXTRA_MESSAGE = "com.example.mysecondapp.MESSAGE";
+    public final static String EXTRA_MESSAGE = "com.example.powerswitchdemo.MESSAGE";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/PowerSwitchCoders.iml" filepath="$PROJECT_DIR$/PowerSwitchCoders.iml" />
-      <module fileurl="file://C:\Users\brand\AndroidStudioProjects\PowerSwitchCoders\PowerSwitchCoders.iml" filepath="C:\Users\brand\AndroidStudioProjects\PowerSwitchCoders\PowerSwitchCoders.iml" />
-      <module fileurl="file://C:\Users\jrtl1_000\AndroidStudioProjects\PowerSwitchCoders\PowerSwitchDemo.iml" filepath="C:\Users\jrtl1_000\AndroidStudioProjects\PowerSwitchCoders\PowerSwitchDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PowerSwitchDemo.iml" filepath="$PROJECT_DIR$/PowerSwitchDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

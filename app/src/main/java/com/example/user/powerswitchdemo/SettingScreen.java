@@ -1,4 +1,4 @@
-package com.example.user.mysecondapp;
+package com.example.user.powerswitchdemo;
 
 import android.content.Intent;
 import android.os.Bundle;
