@@ -25,5 +25,6 @@ public class SettingScreen extends AppCompatActivity {
         //Capture the layout's TextView and set the string as its text
         //TextView textView = (TextView) findViewById(R.id.textView);
         //textView.setText(message);
+        // Jordan's first change to the code
     }
 }

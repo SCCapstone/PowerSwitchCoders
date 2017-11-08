@@ -37,6 +37,6 @@
         android:text="@string/edit_message"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        tools:layout_editor_absoluteY="157dp" />
+        tools:layout_editor_absoluteY="158dp" />
 
 </android.support.constraint.ConstraintLayout>
