@@ -26,5 +26,6 @@ public class SettingScreen extends AppCompatActivity {
         //TextView textView = (TextView) findViewById(R.id.textView);
         //textView.setText(message);
         // Jordan's first change to the code
+        //This is to show a merge commit
     }
 }
