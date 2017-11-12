@@ -8,6 +8,8 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/AndEngineLib" />
+            <option value="$PROJECT_DIR$/AndEngineLib/AndEngine-GLES2-AnchorCenter" />
             <option value="$PROJECT_DIR$/app" />
           </set>
         </option>

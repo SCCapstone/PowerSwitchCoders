@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Test App</string>
+    <string name="app_name">PowerSwitch Demo</string>
     <string name="edit_message">Main App Logo Image</string>
     <string name="button_send">Settings</string>
     <string name="switch_questions">Questions</string>
