@@ -43,4 +43,16 @@
         app:layout_constraintTop_toTopOf="parent"
         android:background="@drawable/gamelogo"/>
 
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="242dp"
+        android:layout_height="214dp"
+        android:layout_marginTop="392dp"
+        android:background="@drawable/carSide1"
+        android:text="@string/edit_message"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
 </android.support.constraint.ConstraintLayout>
