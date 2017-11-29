@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void sendStart(View view){
-        Intent new_intent = new Intent(this, LandingScreenActivity.class);
+        Intent new_intent = new Intent(this, GameActivity.class);
         startActivity(new_intent);
     }
 }
