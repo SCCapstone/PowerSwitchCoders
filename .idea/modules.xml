@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/AndEngineLib/AndEngine-GLES2-AnchorCenter/AndEngine-GLES2-AnchorCenter.iml" filepath="$PROJECT_DIR$/AndEngineLib/AndEngine-GLES2-AnchorCenter/AndEngine-GLES2-AnchorCenter.iml" />
+      <module fileurl="file://C:\Users\jrtl1_000\AndroidStudioProjects\PowerSwitchCoders\AndEngineLib\AndEngine-GLES2-AnchorCenter\AndEngine-GLES2-AnchorCenter.iml" filepath="C:\Users\jrtl1_000\AndroidStudioProjects\PowerSwitchCoders\AndEngineLib\AndEngine-GLES2-AnchorCenter\AndEngine-GLES2-AnchorCenter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AndEngineLib/AndEngineLib.iml" filepath="$PROJECT_DIR$/AndEngineLib/AndEngineLib.iml" />
+      <module fileurl="file://C:\Users\jrtl1_000\AndroidStudioProjects\PowerSwitchCoders\AndEngineLib\AndEngineLib.iml" filepath="C:\Users\jrtl1_000\AndroidStudioProjects\PowerSwitchCoders\AndEngineLib\AndEngineLib.iml" />
       <module fileurl="file://$PROJECT_DIR$/PowerSwitchCoders.iml" filepath="$PROJECT_DIR$/PowerSwitchCoders.iml" />
       <module fileurl="file://C:\Users\jrtl1_000\AndroidStudioProjects\PowerSwitchCoders\PowerSwitchDemo.iml" filepath="C:\Users\jrtl1_000\AndroidStudioProjects\PowerSwitchCoders\PowerSwitchDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
