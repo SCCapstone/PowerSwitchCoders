@@ -1,11 +1,9 @@
 package org.andengine.opengl.texture.compressed.pvr;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.nio.ByteBuffer;
-import java.nio.ByteOrder;
+import android.opengl.GLES20;
 
 import org.andengine.BuildConfig;
+import org.andengine.opengl.texture.ByteBufferOutputStream;
 import org.andengine.opengl.texture.ITextureStateListener;
 import org.andengine.opengl.texture.PixelFormat;
 import org.andengine.opengl.texture.Texture;
@@ -18,11 +16,13 @@ import org.andengine.opengl.util.GLState;
 import org.andengine.util.StreamUtils;
 import org.andengine.util.adt.array.ArrayUtils;
 import org.andengine.util.adt.data.constants.DataConstants;
-import org.andengine.util.adt.io.out.ByteBufferOutputStream;
 import org.andengine.util.debug.Debug;
 import org.andengine.util.math.MathUtils;
 
-import android.opengl.GLES20;
+import java.io.IOException;
+import java.io.InputStream;
+import java.nio.ByteBuffer;
+import java.nio.ByteOrder;
 
 /**
  * (c) 2010 Nicolas Gramlich

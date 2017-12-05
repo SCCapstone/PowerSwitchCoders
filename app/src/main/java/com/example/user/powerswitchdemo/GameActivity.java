@@ -10,9 +10,7 @@ import org.andengine.entity.sprite.Sprite;
 import org.andengine.opengl.texture.atlas.bitmap.BitmapTextureAtlas;
 import org.andengine.opengl.texture.atlas.bitmap.BitmapTextureAtlasTextureRegionFactory;
 import org.andengine.opengl.texture.region.ITextureRegion;
-import org.andengine.ui.IGameInterface;
 import org.andengine.ui.activity.BaseGameActivity;
-import org.andengine.ui.activity.SimpleBaseGameActivity;
 
 import java.io.IOException;
 
@@ -21,7 +19,7 @@ import java.io.IOException;
  * com/example/user/powerswitchdemo/GameActivity.java
  */
 
-public class GameActivity extends BaseGameActivity{
+public class GameActivity extends BaseGameActivity {
 
     Scene currentScene;
     protected static final int CAMERA_WIDTH = 480;
