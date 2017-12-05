@@ -14,4 +14,4 @@ public class LandingScreenActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
     }
 
-}
+} 
