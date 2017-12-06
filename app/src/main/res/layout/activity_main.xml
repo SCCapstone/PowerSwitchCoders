@@ -38,22 +38,11 @@
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_marginTop="158dp"
-        android:text="@string/edit_message"
+        android:text=""
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:background="@drawable/gamelogo"/>
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="242dp"
-        android:layout_height="214dp"
-        android:layout_marginTop="392dp"
-        android:background="@drawable/carside1"
-        android:text="@string/edit_message"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
 
 </android.support.constraint.ConstraintLayout>
