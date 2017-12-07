@@ -4,7 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AndEngineLib/AndEngine-GLES2-AnchorCenter/AndEngine-GLES2-AnchorCenter.iml" filepath="$PROJECT_DIR$/AndEngineLib/AndEngine-GLES2-AnchorCenter/AndEngine-GLES2-AnchorCenter.iml" />
       <module fileurl="file://$PROJECT_DIR$/AndEngineLib/AndEngineLib.iml" filepath="$PROJECT_DIR$/AndEngineLib/AndEngineLib.iml" />
-      <module fileurl="file://$PROJECT_DIR$/PowerSwitchCoders.iml" filepath="$PROJECT_DIR$/PowerSwitchCoders.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PowerSwitchDemo.iml" filepath="$PROJECT_DIR$/PowerSwitchDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
