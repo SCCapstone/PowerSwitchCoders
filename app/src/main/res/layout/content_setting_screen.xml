@@ -6,8 +6,7 @@
     android:layout_height="match_parent"
 
     android:background="#1e90ff"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.user.mysecondapp.SettingScreen"
+    tools:context="com.example.user.powerswitchdemo.SettingScreen"
     tools:showIn="@layout/activity_setting_screen">
 
 
@@ -80,20 +79,6 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/VibrationSwitch" />
 
-
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/my_toolbar"
-        android:layout_width="0dp"
-        android:layout_height="51dp"
-        android:background="?attr/colorPrimary"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="505dp" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline"
