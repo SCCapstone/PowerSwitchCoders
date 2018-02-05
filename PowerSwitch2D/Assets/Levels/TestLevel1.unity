@@ -334,7 +334,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &178777608
 RectTransform:
   m_ObjectHideFlags: 0
@@ -599,7 +599,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 298410896}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9ace9d4749068c84aa4c321a72356bac, type: 3}
   m_Name: 
@@ -816,7 +816,7 @@ GameObject:
   - component: {fileID: 540086478}
   m_Layer: 0
   m_Name: CarPath
-  m_TagString: Untagged
+  m_TagString: VehiclePath
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1712,7 +1712,7 @@ GameObject:
   - component: {fileID: 1384080792}
   m_Layer: 0
   m_Name: CarHolder
-  m_TagString: Untagged
+  m_TagString: Vehicle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1744,7 +1744,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 0
   MyPath: {fileID: 540086478}
-  Speed: 1
+  Speed: 2
   MaxDistanceToGoal: 0.1
 --- !u!1 &1400726167
 GameObject:
@@ -2194,7 +2194,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 0
   MyPath: {fileID: 540086478}
-  Speed: 2
+  Speed: 7
   MaxDistanceToGoal: 0.1
 --- !u!1 &1971827866
 GameObject:
@@ -2212,7 +2212,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1971827867
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2280,7 +2280,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1981617059
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2417,7 +2417,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2026093786
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2485,7 +2485,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2104271921
 RectTransform:
   m_ObjectHideFlags: 0
