@@ -3,7 +3,7 @@ using UnityEngine.TestTools;
 using NUnit.Framework;
 using System.Collections;
 
-public class SimplePlayModeTest {
+public class SimplePathTest {
 
 	[Test]
 	public void SimplePlayModeTestSimplePasses() {
