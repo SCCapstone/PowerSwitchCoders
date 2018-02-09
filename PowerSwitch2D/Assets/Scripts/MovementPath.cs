@@ -65,7 +65,7 @@ public class MovementPath : MonoBehaviour
 
     #endregion //Utility Methods
 
-    //Coroutines run parallel to other fucntions
+    //Coroutines run parallel to other functions
     #region Coroutines
     //GetNextPathPoint() returns the transform component of the next point in our path
     //FollowPath.cs script will inturn move the object it is on to that point in the game
@@ -93,15 +93,15 @@ public class MovementPath : MonoBehaviour
             //If Linear path move from start to end then end to start then repeat
             if (PathType == PathTypes.linear)
             {
-                //If you are at the begining of the path
+                //If you are at the beginning of the path
                 if (movingTo <= 0)
                 {
-                    movementDirection = 1; //Seting to 1 moves forward
+                    movementDirection = 1; //Setting to 1 moves forward
                 }
                 //Else if you are at the end of your path
                 else if (movingTo >= PathSequence.Length - 1)
                 {
-                    movementDirection = 0; //Seting to -1 moves backwards
+                    movementDirection = 0; //Setting to -1 moves backwards
                 }
             }
 
