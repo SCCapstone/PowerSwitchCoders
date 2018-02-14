@@ -18,6 +18,9 @@ public class MovementPath : MonoBehaviour
     public int movementDirection = 1; //1 clockwise/forward || -1 counter clockwise/backwards
     public int movingTo = 0; //used to identify point in PathSequence we are moving to
     public Transform[] PathSequence; //Array of all points in the path
+
+    //Do this differently - may need to just switch to new game object
+    public GameObject linkedVehicle;
     #endregion //Public Variables
 
     #region Private Variables
@@ -101,7 +104,13 @@ public class MovementPath : MonoBehaviour
                 //Else if you are at the end of your path
                 else if (movingTo >= PathSequence.Length - 1)
                 {
+<<<<<<< HEAD
                     movementDirection = 0; //Setting to -1 moves backwards
+=======
+                    linkedVehicle.GetComponent<MultiSwitch>().SwitchSpriteAndPath();
+                    yield break;
+                    movementDirection = 0; //Seting to -1 moves backwards
+>>>>>>> Unity
                 }
             }
 
