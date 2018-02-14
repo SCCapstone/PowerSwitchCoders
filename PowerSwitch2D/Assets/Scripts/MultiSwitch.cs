@@ -12,7 +12,7 @@ public class MultiSwitch : MonoBehaviour {
 
 	// Use this for initialization
 
-    //ToDo: Make this code less horrible and break-prone
+    //ToDo: Make this code less horrible and error-prone
 	void Start () {
         currentFP = this.gameObject.GetComponent<FollowPath>();
 	}
@@ -25,7 +25,10 @@ public class MultiSwitch : MonoBehaviour {
     public void SwitchSpriteAndPath ()
     {
         currentFP.MyPath = newMovePath;
-        Sprite switchSprite = linkedVehicle.GetComponent<Sprite>(); 
-        switchSprite = newVehicle;
+        linkedVehicle.GetComponent<SpriteRenderer>().sprite = newVehicle;
+        linkedVehicle.transform.localScale += new Vector3(1.0f,1.0f,1.0f);
+        linkedVehicle.transform.Rotate(new Vector3(0,0,90f));
+        //Sprite switchSprite = linkedVehicle.GetComponent<SpriteRenderer>().sprite; 
+        //switchSprite = newVehicle;
     }
 }
