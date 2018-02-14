@@ -88,7 +88,7 @@ public class FollowPath : MonoBehaviour
 
         //Check to see if you are close enough to the next point to start moving to the following one
         //Using Pythagorean Theorem
-        //per unity suaring a number is faster than the square root of a number
+        //per unity squaring a number is faster than the square root of a number
         //Using .sqrMagnitude 
         var distanceSquared = (transform.position - pointInPath.Current.position).sqrMagnitude;
         if (distanceSquared < MaxDistanceToGoal * MaxDistanceToGoal) //If you are close enough
