@@ -104,10 +104,9 @@ public class MovementPath : MonoBehaviour
                 //Else if you are at the end of your path
                 else if (movingTo >= PathSequence.Length - 1)
                 {
-                    movementDirection = 0; //Setting to -1 moves backwards
+                    movementDirection = 0; //Setting to stop vehicle when it has reached the end of its path
                     linkedVehicle.GetComponent<MultiSwitch>().SwitchSpriteAndPath();
                     yield break;
-                    movementDirection = 0; //Seting to -1 moves backwards
                 }
             }
 
