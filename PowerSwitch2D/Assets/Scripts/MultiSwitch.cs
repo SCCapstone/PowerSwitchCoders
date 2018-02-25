@@ -28,6 +28,7 @@ public class MultiSwitch : MonoBehaviour {
         linkedVehicle.GetComponent<SpriteRenderer>().sprite = newVehicle;
         linkedVehicle.transform.localScale += new Vector3(1.0f,1.0f,1.0f);
         linkedVehicle.transform.Rotate(new Vector3(0,0,90f));
+        currentFP.Start();
         //Sprite switchSprite = linkedVehicle.GetComponent<SpriteRenderer>().sprite; 
         //switchSprite = newVehicle;
     }
