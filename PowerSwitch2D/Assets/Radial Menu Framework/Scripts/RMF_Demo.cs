@@ -42,5 +42,11 @@ public class RMF_Demo : MonoBehaviour {
 
     }
 
+    public void chooseVehicle(string vehicleName)
+    {
+        Debug.Log("You have selected a vehicle");
+        Debug.Log("Your vehicle is: " + vehicleName);
+    }
+
 
 }
