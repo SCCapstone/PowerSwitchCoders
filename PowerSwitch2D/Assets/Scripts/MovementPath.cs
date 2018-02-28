@@ -19,8 +19,12 @@ public class MovementPath : MonoBehaviour
     public int movingTo = 0; //used to identify point in PathSequence we are moving to
     public Transform[] PathSequence; //Array of all points in the path
 
+    //
+    public LevelHandler levelHandler;
     //Do this differently - may need to just switch to new game object
-    public GameObject linkedVehicle;
+    //public GameObject linkedVehicle;
+    public Sprite linkedSprite;
+    //public GameObject levelHandler;
     #endregion //Public Variables
 
     #region Private Variables
@@ -105,7 +109,9 @@ public class MovementPath : MonoBehaviour
                 else if (movingTo >= PathSequence.Length - 1)
                 {
                     movementDirection = 0; //Setting to stop vehicle when it has reached the end of its path
-                    linkedVehicle.GetComponent<MultiSwitch>().SwitchSpriteAndPath();
+                    //linkedVehicle.GetComponent<MultiSwitch>().SwitchSpriteAndPath();
+                    Debug.Log("Queried Next Path");
+                    levelHandler.QueryNextPath();
                     yield break;
                 }
             }
