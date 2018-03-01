@@ -2296,7 +2296,7 @@ MonoBehaviour:
   - {fileID: 835489149}
   - {fileID: 1095523029}
   levelHandler: {fileID: 1341797831}
-  linkedSprite: {fileID: 21300000, guid: e8cf7e67aaf77a3438b8c26352af00c0, type: 3}
+  linkedSprite: {fileID: 21300000, guid: f1fd76a47b2ffa5409e2c765eeaa099a, type: 3}
 --- !u!4 &353076628
 Transform:
   m_ObjectHideFlags: 0
