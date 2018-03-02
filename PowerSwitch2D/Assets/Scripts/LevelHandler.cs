@@ -131,7 +131,7 @@ public class LevelHandler : MonoBehaviour {
             currentSprite.sprite = BCpath.linkedSprite;
             //Purely so bike isn't so small, remove later
             //On second thought, no, it looks ugly
-            playerVehicle.transform.localScale += new Vector3(0.5f, 0.5f, 0.5f);
+            //playerVehicle.transform.localScale += new Vector3(0.5f, 0.5f, 0.5f);
             currentPath.Start();
         } else if (currentPath.MyPath == BCpath)
         {
