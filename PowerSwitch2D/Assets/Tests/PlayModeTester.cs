@@ -13,7 +13,7 @@ namespace Tests
         [UnityTest]
         public IEnumerator CanFindNextPathPoint()
         {
-            var basePath = Resources.Load("Tests/CarPath");
+            //var basePath = Resources.Load("Tests/CarPath");
             var currentPath = new GameObject().AddComponent<MovementPath>();
             var currentVehicle = new GameObject().AddComponent<FollowPath>();
             var startPoint = new GameObject();
