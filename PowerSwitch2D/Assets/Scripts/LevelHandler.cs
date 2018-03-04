@@ -34,6 +34,9 @@ public class LevelHandler : MonoBehaviour {
     public Slider Battery;
     private int PowerPoints = 100;
 
+    public GameObject FailScreen;
+    public GameObject WinScreen;
+
 	// Use this for initialization
     //Set up the connections between the current player vehicle path and sprite
 	void Start () {
@@ -58,7 +61,7 @@ public class LevelHandler : MonoBehaviour {
             {
                 levelStarted = true;
                 playerVehicle.SetActive(true);
-                currentPath.Speed = 1;
+                currentPath.Speed = ABpath.travelSpeed;
                 //InvokeRepeating calls (a particular function, after DELAYf seconds, every NUMBERf seconds)
                 //Consider replacing with update function call if battery slider jitteryness becomes an issue
                 InvokeRepeating("BurnFuel", 1.0f, 0.5f);
@@ -70,7 +73,13 @@ public class LevelHandler : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		if (PowerPoints <= 0)
+        {
+            CancelInvoke("BurnFuel");
+            currentPath.Speed = 0;
+            FailScreen.SetActive(true);
+            levelStarted = false;
+        }
 	}
 
     //Rework this to be modular, not hard-coded
@@ -137,6 +146,7 @@ public class LevelHandler : MonoBehaviour {
             currentPath.MyPath = BCpath;
             //Very memory-inefficient, in retrospect
             currentSprite.sprite = BCpath.linkedSprite;
+            currentPath.Speed = BCpath.travelSpeed;
             //Purely so bike isn't so small, remove later
             //On second thought, no, it looks ugly
             //playerVehicle.transform.localScale += new Vector3(0.5f, 0.5f, 0.5f);
@@ -145,11 +155,16 @@ public class LevelHandler : MonoBehaviour {
         {
             currentPath.MyPath = CDpath;
             currentSprite.sprite = CDpath.linkedSprite;
+            //currentPath.SetSpeed1();
             currentPath.Start();
         } else if (currentPath.MyPath == CDpath)
         {
+            //Currently the last path
             currentPath.MyPath = CDpath;
             currentPath.Speed = 0;
+            CancelInvoke("BurnFuel");
+            WinScreen.SetActive(true);
+            levelStarted = false;
         } else
         {
             Debug.Log("Warning: critical Failure");
@@ -163,6 +178,7 @@ public class LevelHandler : MonoBehaviour {
     }
 
     //Deprecated, to be removed entirely
+    /*
     public void PickSprite(string vehicleName)
     {
         if (vehicleName.ToLower() == "car")
@@ -181,13 +197,13 @@ public class LevelHandler : MonoBehaviour {
         {
             currentSprite.sprite = scooterSprite;
         }
-    }
+    }*/
 
     public void BurnFuel()
     {
         if (currentSprite.sprite == carSprite)
         {
-            PowerPoints -= 6;
+            PowerPoints -= 5;
             //Battery.value = PowerPoints;
         } else if (currentSprite.sprite == bikeSprite)
         {

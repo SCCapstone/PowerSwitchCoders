@@ -24,6 +24,7 @@ public class MovementPath : MonoBehaviour
     //Do this differently - may need to just switch to new game object
     //public GameObject linkedVehicle;
     public Sprite linkedSprite;
+    public float travelSpeed = 1.0f;
     //public GameObject levelHandler;
     #endregion //Public Variables
 
