@@ -164,7 +164,7 @@ public class LevelHandler : MonoBehaviour {
             currentPath.Speed = 0;
             CancelInvoke("BurnFuel");
             WinScreen.SetActive(true);
-            levelStarted = false;
+            //levelStarted = false;
         } else
         {
             Debug.Log("Warning: critical Failure");
