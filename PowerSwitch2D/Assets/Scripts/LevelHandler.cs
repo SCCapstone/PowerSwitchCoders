@@ -38,7 +38,7 @@ public class LevelHandler : MonoBehaviour {
         {
             Debug.Log("Couldn't find Player Vehicle path or sprite - something went wrong");
         }
-        pickCursor = 1;
+        pickCursor = 0;
 	}
 
     public void BeginLevel()
@@ -68,10 +68,10 @@ public class LevelHandler : MonoBehaviour {
     //Rework this to be modular, not hard-coded
     public void PickVehicle(string vehicleName)
     {
-        if (pickCursor == 0)
+        if (pickCursor == -1)
         {
             pickCursor++;
-        } else if (pickCursor == 1) {
+        } else if (pickCursor == 0) {
             
             string tempPathName = vehicleName + "PathAB";
             GameObject tempPath = GameObject.Find(tempPathName);
@@ -87,7 +87,7 @@ public class LevelHandler : MonoBehaviour {
             //PickSprite(vehicleName);
             pickCursor++;
 
-        } else if (pickCursor == 2)
+        } else if (pickCursor == 1)
         {
             string tempPathName = vehicleName + "PathBC";
             GameObject tempPath = GameObject.Find(tempPathName);
@@ -101,7 +101,7 @@ public class LevelHandler : MonoBehaviour {
             //currentPath.MyPath = ABpath;
             //PickSprite(vehicleName);
             pickCursor++;
-        } else if (pickCursor == 3)
+        } else if (pickCursor == 2)
         {
             string tempPathName = vehicleName + "PathCD";
             GameObject tempPath = GameObject.Find(tempPathName);
