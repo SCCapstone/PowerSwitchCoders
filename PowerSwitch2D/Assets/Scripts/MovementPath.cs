@@ -110,7 +110,7 @@ public class MovementPath : MonoBehaviour
                 {
                     movementDirection = 0; //Setting to stop vehicle when it has reached the end of its path
                     //linkedVehicle.GetComponent<MultiSwitch>().SwitchSpriteAndPath();
-                    Debug.Log("Queried Next Path");
+                    //Debug.Log("Queried Next Path");
                     levelHandler.QueryNextPath();
                     yield break;
                 }

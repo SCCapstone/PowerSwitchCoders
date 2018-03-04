@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class LevelHandler : MonoBehaviour {
 
@@ -29,6 +30,10 @@ public class LevelHandler : MonoBehaviour {
     //Finally, the vehicle game object itself
     public GameObject playerVehicle;
 
+    //As well as the actual Battery indicating the Power Points
+    public Slider Battery;
+    private int PowerPoints = 100;
+
 	// Use this for initialization
     //Set up the connections between the current player vehicle path and sprite
 	void Start () {
@@ -54,6 +59,9 @@ public class LevelHandler : MonoBehaviour {
                 levelStarted = true;
                 playerVehicle.SetActive(true);
                 currentPath.Speed = 1;
+                //InvokeRepeating calls (a particular function, after DELAYf seconds, every NUMBERf seconds)
+                //Consider replacing with update function call if battery slider jitteryness becomes an issue
+                InvokeRepeating("BurnFuel", 1.0f, 0.5f);
             }
             
         }
@@ -154,6 +162,7 @@ public class LevelHandler : MonoBehaviour {
         SceneManager.LoadScene(currentScene.name);
     }
 
+    //Deprecated, to be removed entirely
     public void PickSprite(string vehicleName)
     {
         if (vehicleName.ToLower() == "car")
@@ -172,5 +181,21 @@ public class LevelHandler : MonoBehaviour {
         {
             currentSprite.sprite = scooterSprite;
         }
+    }
+
+    public void BurnFuel()
+    {
+        if (currentSprite.sprite == carSprite)
+        {
+            PowerPoints -= 6;
+            //Battery.value = PowerPoints;
+        } else if (currentSprite.sprite == bikeSprite)
+        {
+            PowerPoints -= 3;
+        } else if (currentSprite.sprite == boatSprite)
+        {
+            PowerPoints -= 4;
+        }
+        Battery.value = PowerPoints;
     }
 }
