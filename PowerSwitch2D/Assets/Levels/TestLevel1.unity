@@ -735,7 +735,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: b36f07839999c774eb0de8fcea883820, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7915d6c0f3aff3944b1ea3efd6d504d1, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2343,7 +2343,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: b36f07839999c774eb0de8fcea883820, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7edfe7d9f5aaadf468c6f5ccad1acc47, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3331,9 +3331,7 @@ MonoBehaviour:
     m_LineSpacing: 0.5
   m_Text: 'Oh no, you ran out of Power Points!
 
-    Pick your vehicle & power source carefully.
-
-    Tap the buttons below to Replay or Exit'
+    Pick more carefully next time!'
 --- !u!222 &552003574
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6449,7 +6447,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &951157410
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6806,7 +6804,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: b36f07839999c774eb0de8fcea883820, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 565f5d5e3aafb1340b9d4cf44bbfe7be, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -7465,7 +7463,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: b36f07839999c774eb0de8fcea883820, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 330bef9532c35ab4eb7c75bd9e224d4d, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -9698,7 +9696,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 12.4, y: -45.1}
+  m_AnchoredPosition: {x: 2, y: -10}
   m_SizeDelta: {x: 1080, y: 261.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1589484827
@@ -9713,7 +9711,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -9722,11 +9720,11 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: cee533bdaf5c01a4091b972ae1bbb654, type: 3}
-    m_FontSize: 44
+    m_FontSize: 48
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
-    m_MaxSize: 46
+    m_MaxSize: 48
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -10811,8 +10809,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -140, y: 636.4}
-  m_SizeDelta: {x: 1100, y: 230}
+  m_AnchoredPosition: {x: -140, y: 600}
+  m_SizeDelta: {x: 1100, y: 322.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1892502431
 MonoBehaviour:
@@ -10836,7 +10834,7 @@ MonoBehaviour:
   m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
-  m_FillCenter: 1
+  m_FillCenter: 0
   m_FillMethod: 4
   m_FillAmount: 1
   m_FillClockwise: 1
@@ -11896,7 +11894,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2076671667
 RectTransform:
   m_ObjectHideFlags: 0
