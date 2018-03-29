@@ -99,7 +99,7 @@ public class LevelHandler : MonoBehaviour {
             MovementPath tempMove = tempPath.GetComponent<MovementPath>();
             
             ABpath = tempMove;
-            currentPath.MyPath = ABpath;
+            currentPath.MyMovementPath = ABpath;
             currentSprite.sprite = ABpath.linkedSprite;
             //PickSprite(vehicleName);
             pickCursor++;
@@ -115,7 +115,7 @@ public class LevelHandler : MonoBehaviour {
             MovementPath tempMove = tempPath.GetComponent<MovementPath>();
 
             BCpath = tempMove;
-            //currentPath.MyPath = ABpath;
+            //currentPath.MyMovementPath = ABpath;
             //PickSprite(vehicleName);
             pickCursor++;
         } else if (pickCursor == 2)
@@ -129,7 +129,7 @@ public class LevelHandler : MonoBehaviour {
             MovementPath tempMove = tempPath.GetComponent<MovementPath>();
 
             CDpath = tempMove;
-            //currentPath.MyPath = ABpath;
+            //currentPath.MyMovementPath = ABpath;
             //PickSprite(vehicleName);
             pickCursor++;
         } else
@@ -141,9 +141,9 @@ public class LevelHandler : MonoBehaviour {
     public void QueryNextPath()
     {
         currentPath = playerVehicle.GetComponent<FollowPath>();
-        if (currentPath.MyPath == ABpath)
+        if (currentPath.MyMovementPath == ABpath)
         {
-            currentPath.MyPath = BCpath;
+            currentPath.MyMovementPath = BCpath;
             //Very memory-inefficient, in retrospect
             currentSprite.sprite = BCpath.linkedSprite;
             currentPath.Speed = BCpath.travelSpeed;
@@ -151,16 +151,16 @@ public class LevelHandler : MonoBehaviour {
             //On second thought, no, it looks ugly
             //playerVehicle.transform.localScale += new Vector3(0.5f, 0.5f, 0.5f);
             currentPath.Start();
-        } else if (currentPath.MyPath == BCpath)
+        } else if (currentPath.MyMovementPath == BCpath)
         {
-            currentPath.MyPath = CDpath;
+            currentPath.MyMovementPath = CDpath;
             currentSprite.sprite = CDpath.linkedSprite;
             //currentPath.SetSpeed1();
             currentPath.Start();
-        } else if (currentPath.MyPath == CDpath)
+        } else if (currentPath.MyMovementPath == CDpath)
         {
             //Currently the last path
-            currentPath.MyPath = CDpath;
+            currentPath.MyMovementPath = CDpath;
             currentPath.Speed = 0;
             CancelInvoke("BurnFuel");
             WinScreen.SetActive(true);

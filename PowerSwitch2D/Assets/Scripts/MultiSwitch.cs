@@ -24,7 +24,7 @@ public class MultiSwitch : MonoBehaviour {
 
     public void SwitchSpriteAndPath ()
     {
-        currentFP.MyPath = newMovePath;
+        currentFP.MyMovementPath = newMovePath;
         linkedVehicle.GetComponent<SpriteRenderer>().sprite = newVehicle;
         linkedVehicle.transform.localScale += new Vector3(1.0f,1.0f,1.0f);
         //linkedVehicle.transform.Rotate(new Vector3(0,0,90f));

@@ -13,18 +13,18 @@ public class FollowPath : MonoBehaviour
 
     #region Public Variables
     public MovementType Type = MovementType.MoveTowards; // Movement type used
-    public MovementPath MyPath; // Reference to Movement Path Used
-    public float Speed = 1; // Speed object is moving
+    public MovementPath MyMovementPath; // Reference to Movement Path Used
+    public float Speed = 1; // Speed that the object is moving
     public float MaxDistanceToGoal = .1f; // How close does it have to be to the point to be considered at point
     #endregion //Public Variables
 
     #region Private Variables
-    private IEnumerator<Transform> pointInPath; //Used to reference points returned from MyPath.GetNextPathPoint
+    private IEnumerator<Transform> pointInPath; //Used to reference points returned from MyMovementPath.GetNextPathPoint
     #endregion //Private Variables
 
     // (Unity Named Methods)
 
-    //Temp method to set vehicle speed to 1
+    //This method sets the speed to 1
     public void SetSpeed1()
     {
         Speed = 1;
@@ -33,15 +33,15 @@ public class FollowPath : MonoBehaviour
     #region Main Methods
     public void Start()
     {
-        //Make sure there is a path assigned
-        if (MyPath == null)
+        //Check to make sure there is a path assigned
+        if (MyMovementPath == null)
         {
             Debug.LogError("Movement Path cannot be null, I must have a path to follow.", gameObject);
             return;
         }
 
         //Sets up a reference to an instance of the coroutine GetNextPathPoint
-        pointInPath = MyPath.GetNextPathPoint();
+        pointInPath = MyMovementPath.GetNextPathPoint();
         //Debug.Log(pointInPath.Current);
         //Get the next point in the path to move to (Gets the Default 1st value)
         pointInPath.MoveNext();

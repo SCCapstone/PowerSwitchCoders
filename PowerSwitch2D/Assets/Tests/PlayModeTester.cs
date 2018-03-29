@@ -29,7 +29,7 @@ namespace Tests
             {
                 Debug.Log("New Movement Path Default Init");
             }
-            currentVehicle.GetComponent<FollowPath>().MyPath = currentPath;
+            currentVehicle.GetComponent<FollowPath>().MyMovementPath = currentPath;
 
             yield return new WaitForSeconds(2.0f);
             
@@ -57,7 +57,7 @@ namespace Tests
             var currentVehicle = new GameObject().AddComponent<FollowPath>();
             var firstPoint = new GameObject();
 
-            currentVehicle.MyPath = currentPath;
+            currentVehicle.MyMovementPath = currentPath;
             var pathScript = currentPath.GetComponent<MovementPath>();
             var pathArray = pathScript.PathSequence;
             pathArray.Initialize();
