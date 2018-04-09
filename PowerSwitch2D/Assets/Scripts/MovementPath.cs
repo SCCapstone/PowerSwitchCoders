@@ -25,6 +25,7 @@ public class MovementPath : MonoBehaviour
     //public GameObject linkedVehicle;
     public Sprite linkedSprite;
     public float travelSpeed = 1.0f;
+    public int travelDistance = 10;
     //public GameObject levelHandler;
     #endregion //Public Variables
 

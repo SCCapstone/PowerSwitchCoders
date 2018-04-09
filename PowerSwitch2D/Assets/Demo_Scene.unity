@@ -148,6 +148,9 @@ MonoBehaviour:
   - {fileID: 429914730}
   - {fileID: 978103227}
   - {fileID: 1524194097}
+  levelHandler: {fileID: 0}
+  linkedSprite: {fileID: 0}
+  travelSpeed: 1
 --- !u!4 &42314405
 Transform:
   m_ObjectHideFlags: 0
@@ -369,7 +372,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Type: 0
-  MyPath: {fileID: 42314404}
+  MyMovementPath: {fileID: 42314404}
   Speed: 1
   MaxDistanceToGoal: 0.1
 --- !u!23 &644892270
@@ -592,7 +595,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Type: 1
-  MyPath: {fileID: 1362440598}
+  MyMovementPath: {fileID: 1362440598}
   Speed: 1
   MaxDistanceToGoal: 0.1
 --- !u!1 &1047728141
@@ -693,6 +696,9 @@ MonoBehaviour:
   PathSequence:
   - {fileID: 554452564}
   - {fileID: 596631340}
+  levelHandler: {fileID: 0}
+  linkedSprite: {fileID: 0}
+  travelSpeed: 1
 --- !u!4 &1362440599
 Transform:
   m_ObjectHideFlags: 0

@@ -79,6 +79,7 @@ public class LevelHandler : MonoBehaviour {
             currentPath.Speed = 0;
             FailScreen.SetActive(true);
             levelStarted = false;
+            Time.timeScale = 0.0f;
         }
 	}
 
@@ -176,28 +177,6 @@ public class LevelHandler : MonoBehaviour {
         Scene currentScene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(currentScene.name);
     }
-
-    //Deprecated, to be removed entirely
-    /*
-    public void PickSprite(string vehicleName)
-    {
-        if (vehicleName.ToLower() == "car")
-        {
-            currentSprite.sprite = carSprite;
-        }
-        if (vehicleName.ToLower() == "bike")
-        {
-            currentSprite.sprite = bikeSprite;
-        }
-        if (vehicleName.ToLower() == "boat")
-        {
-            currentSprite.sprite = boatSprite;
-        }
-        if (vehicleName.ToLower() == "scooter")
-        {
-            currentSprite.sprite = scooterSprite;
-        }
-    }*/
 
     public void BurnFuel()
     {
