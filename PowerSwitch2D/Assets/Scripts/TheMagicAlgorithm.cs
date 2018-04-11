@@ -41,7 +41,7 @@ public class TheMagicAlgorithm : MonoBehaviour {
     public MovementPath[] playerPaths;
     private int[] playerFuels;
 
-    public string usertest { private get; set; }
+    //public string usertest { private get; set; }
     //private string[] powerSources;
 
     //private MovementPath[] possPaths;
