@@ -594,7 +594,7 @@ MonoBehaviour:
   m_Text: "PowerSwitch is an energy game designed to test your knowledge of the different
     forms of energy and how to use them efficiently.\r\n\r\nTo play, tap each point
     and pick the vehicle you'll use to travel to the next destination. Once you have
-    selected a vehicle for each destination point, hit \u2018GO and see if the vehicles
+    selected a vehicle for each destination point, hit \u2018GO' and see if the vehicles
     and power sources you picked paid off!\r\n"
 --- !u!222 &626092167
 CanvasRenderer:
