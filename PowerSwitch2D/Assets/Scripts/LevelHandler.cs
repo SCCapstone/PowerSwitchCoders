@@ -36,10 +36,16 @@ public class LevelHandler : MonoBehaviour {
 
     public GameObject FailScreen;
     public GameObject WinScreen;
+    public GameObject AudioHandler;
+    private AudioSource audioSource;
 
-	// Use this for initialization
+    // Use this for initialization
     //Set up the connections between the current player vehicle path and sprite
-	void Start () {
+    void Start () {
+
+        //Initialize the Audio Source
+        audioSource = AudioHandler.GetComponent<AudioSource>();
+
         currentPath = playerVehicle.GetComponent<FollowPath>();
         currentSprite = playerVehicle.transform.GetChild(0).GetComponent<SpriteRenderer>();
         if (currentPath == null || currentSprite == null)
@@ -77,7 +83,15 @@ public class LevelHandler : MonoBehaviour {
         {
             CancelInvoke("BurnFuel");
             currentPath.Speed = 0;
-            FailScreen.SetActive(true);
+
+            //Make Fail Screen active and change music
+            if (!FailScreen.activeSelf)
+            {
+                audioSource.Stop();
+                audioSource.PlayOneShot((AudioClip)Resources.Load("Sound/BadStuff/Sample1"));
+                FailScreen.SetActive(true);
+            }
+
             levelStarted = false;
             Time.timeScale = 0.0f;
         }
