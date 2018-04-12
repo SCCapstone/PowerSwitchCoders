@@ -21,8 +21,7 @@ public class MovementPath : MonoBehaviour
 
     //
     public LevelHandler levelHandler;
-    //Do this differently - may need to just switch to new game object
-    //public GameObject linkedVehicle;
+    public PathRunner pathRunner;
     public Sprite linkedSprite;
     public float travelSpeed = 1.0f;
     public int travelDistance = 10;
@@ -113,7 +112,8 @@ public class MovementPath : MonoBehaviour
                     movementDirection = 0; //Setting to stop vehicle when it has reached the end of its path
                     //linkedVehicle.GetComponent<MultiSwitch>().SwitchSpriteAndPath();
                     //Debug.Log("Queried Next Path");
-                    levelHandler.QueryNextPath();
+                    pathRunner.PowerSwitch();
+                    //levelHandler.QueryNextPath();
                     yield break;
                 }
             }

@@ -2,27 +2,30 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TheMagicAlgorithm : MonoBehaviour {
+public class PathHandler : MonoBehaviour {
 
-    [Header("Power Source Label Text & Int Values")]
-    [Tooltip("These values control the costs of the Power Sources")]
-    /*
-    public Text manText;
-    public Text windText;
-    public Text electricText;
-    public Text oilText;
-    public Text coalText;
-    */
     private int manCost;
     private int windCost;
     private int electricCost;
     private int oilCost;
     private int coalCost;
 
+    
+
     public DataHandler costData;
 
+    [Header("Number of Choices = playerPaths size")]
+    [Tooltip("Determines size of array playerPaths")]
+
+    public MovementPath[] playerPaths;
+
+    [Header("Live Data - Don't Touch These Values")]
+    [Tooltip("These values control the costs of the Power Sources")]
+
+    public float pickedPathCost; 
+
     //Variance should never be larger than half the value of the cheapest powersource, or a cost might be set < 0.
-    public int variance = 5;
+    //private int variance;
 
     private string[] vehicleInts = { "Dummy", "Bike", "Car", "Boat", "Train" };
     private string[] pathJoints = { "AB", "BC", "CD", "DE", "EF", "FG" };
@@ -30,74 +33,46 @@ public class TheMagicAlgorithm : MonoBehaviour {
     //will therefore need a checkUpgrades function 
 
     private int pCursor = 0;
+    public int powerPoints;
 
-    [Header("Number of Power Points")]
-    [Tooltip("Must be greater than zero")]
-
-    public int powerPoints = 100;
-
-    [Header("Number of Choices = playerPaths size")]
-    [Tooltip("Determines size of array playerPaths")]
-
-    public MovementPath[] playerPaths;
+    
     private int[] playerFuels;
 
-    //public string usertest { private get; set; }
-    //private string[] powerSources;
+    //GIZMOS
+    public void OnDrawGizmos()
+    {
+        if (!(costData == null))
+        {
+            Gizmos.DrawLine(costData.transform.position, this.transform.position);
+        } else
+        {
+            return;
+        }
+    }
 
-    //private MovementPath[] possPaths;
-
-    //[Header("Movement Paths")]
-    //[Tooltip("This array needs to be filled with each and every movement path in the level")]
-
-    //deprecated ftm 
-    //public MovementPath[] AllPaths;
+    private void Awake()
+    {
+        powerPoints = costData.powerPoints;
+    }
 
     // Use this for initialization
-    void Start () {
+    void Start(){
 
-        //RandomizeCosts();
         playerFuels = new int[playerPaths.Length];
+
+        //powerPoints = costData.powerPoints;
 
         manCost = costData.manCost;
         windCost = costData.windCost;
         electricCost = costData.electricCost;
         oilCost = costData.oilCost;
         coalCost = costData.coalCost;
+    }
 
-    //powerSources = new string[playerPaths.Length];
-    //pCursor = 1;
-
-    //int tempSize = playerPaths.Length;
-
-    //Possible 4 paths per chioce so 4 * number of choices
-    //possPaths = new MovementPath[tempSize];
-}
-	
-    //Need IF(PowerPoints > (PowerSourceCost*(Distance/Speed) Then VALID
-    //ELSE FAIL
 
 	void Update () {
         //do PowerPoints text value update here, along with possible other effects, and win/fail handling
 	}
-
-    /*
-    void RandomizeCosts ()
-    {
-        manCost += Random.Range(-variance, variance);
-        windCost += Random.Range(-variance, variance);
-        electricCost += Random.Range(-variance, variance);
-        oilCost += Random.Range(-variance, variance);
-        coalCost += Random.Range(-variance, variance);
-
-        //
-        manText.text = manCost.ToString();
-        windText.text = windCost.ToString();
-        electricText.text = electricCost.ToString();
-        oilText.text = oilCost.ToString();
-        coalText.text = coalCost.ToString();
-    }
-    */
 
     //Player fills the array of their chosen paths as they pick a vehicle at each point 
     public void PickPath(int choice)
@@ -193,6 +168,7 @@ public class TheMagicAlgorithm : MonoBehaviour {
         for (int i = 0; i < playerPaths.Length; i++)
         {
             playerCost += playerFuels[i] * (playerPaths[i].travelDistance / playerPaths[i].travelSpeed);
+            pickedPathCost = playerCost;
         }
         if ( Mathf.Floor(playerCost) > powerPoints)
         {

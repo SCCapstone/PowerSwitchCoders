@@ -115,7 +115,7 @@ public class LevelHandler : MonoBehaviour {
             
             ABpath = tempMove;
             currentPath.MyMovementPath = ABpath;
-            currentSprite.sprite = ABpath.linkedSprite;
+            //currentSprite.sprite = ABpath.linkedSprite;
             //PickSprite(vehicleName);
             pickCursor++;
 
@@ -160,7 +160,7 @@ public class LevelHandler : MonoBehaviour {
         {
             currentPath.MyMovementPath = BCpath;
             //Very memory-inefficient, in retrospect
-            currentSprite.sprite = BCpath.linkedSprite;
+            //currentSprite.sprite = BCpath.linkedSprite;
             currentPath.Speed = BCpath.travelSpeed;
             //Purely so bike isn't so small, remove later
             //On second thought, no, it looks ugly
@@ -169,7 +169,7 @@ public class LevelHandler : MonoBehaviour {
         } else if (currentPath.MyMovementPath == BCpath)
         {
             currentPath.MyMovementPath = CDpath;
-            currentSprite.sprite = CDpath.linkedSprite;
+            //currentSprite.sprite = CDpath.linkedSprite;
             //currentPath.SetSpeed1();
             currentPath.Start();
         } else if (currentPath.MyMovementPath == CDpath)
