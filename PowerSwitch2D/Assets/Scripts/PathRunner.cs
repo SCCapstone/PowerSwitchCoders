@@ -14,8 +14,12 @@ public class PathRunner : MonoBehaviour {
     private MovementPath newPath;
     private float nextUpdate = 0.05f;
 
-	// Use this for initialization
-	void Start () {
+    [Header("Explosion Effect")]
+    [Tooltip("Boom")]
+    public GameObject boom;
+
+    // Use this for initialization
+    void Start () {
         pathCursor = 0;
 	}
 	
@@ -72,6 +76,8 @@ public class PathRunner : MonoBehaviour {
             playerMover.Speed = 0;
         } else
         {
+            playerMover.Speed = 0;
+            Explode();
             newPath = pathHandler.playerPaths[pathCursor];
             playerMover.MyMovementPath = newPath;
             playerSprite.sprite = newPath.linkedSprite;
@@ -87,5 +93,14 @@ public class PathRunner : MonoBehaviour {
     public void EndGame(bool hasWon)
     {
         //either win or lose, true or false
+        Time.timeScale = 0.0f;
+    }
+
+    public void Explode()
+    {
+        //Make Boom
+        GameObject newBoom = Instantiate(boom, playerMover.transform.position, Quaternion.identity);
+        //Destroy Boom
+        Destroy(newBoom, 2.0f);
     }
 }

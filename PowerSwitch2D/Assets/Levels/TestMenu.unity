@@ -791,7 +791,7 @@ GameObject:
   - component: {fileID: 626092167}
   - component: {fileID: 626092166}
   m_Layer: 5
-  m_Name: Discription
+  m_Name: Desc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -814,7 +814,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 576, y: -1074}
-  m_SizeDelta: {x: 500, y: 150}
+  m_SizeDelta: {x: 886.5, y: 850.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &626092166
 MonoBehaviour:
@@ -839,11 +839,11 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 60
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 300
-    m_Alignment: 4
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -1198,7 +1198,7 @@ Camera:
   m_GameObject: {fileID: 786471960}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
+  m_ClearFlags: 2
   m_BackGroundColor: {r: 0, g: 0.716, b: 1, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -1302,6 +1302,7 @@ MonoBehaviour:
   - {fileID: 1293933467}
   - {fileID: 1381828285}
   levelHandler: {fileID: 0}
+  pathRunner: {fileID: 0}
   linkedSprite: {fileID: 21300000, guid: c2bd2b83d2c3fc04e84d6144d0ed249f, type: 3}
   travelSpeed: 1
   travelDistance: 10
@@ -2364,6 +2365,7 @@ MonoBehaviour:
   - {fileID: 250177001}
   - {fileID: 151155216}
   levelHandler: {fileID: 0}
+  pathRunner: {fileID: 0}
   linkedSprite: {fileID: 21300000, guid: 802bc6570ab9bc64b8b216cff9bf9866, type: 3}
   travelSpeed: 1
   travelDistance: 10
@@ -2466,7 +2468,7 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: ad87694f1f653e74fbb3486685972833, type: 2}
+  m_Material: {fileID: 2100000, guid: c3065c5ab1373f94f9f0dc81bac0b762, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 0.392}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
@@ -2882,7 +2884,7 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: ad87694f1f653e74fbb3486685972833, type: 2}
+  m_Material: {fileID: 2100000, guid: c3065c5ab1373f94f9f0dc81bac0b762, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 0.392}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
@@ -2980,7 +2982,7 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: ad87694f1f653e74fbb3486685972833, type: 2}
+  m_Material: {fileID: 2100000, guid: c3065c5ab1373f94f9f0dc81bac0b762, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 0.497}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
@@ -3218,6 +3220,7 @@ MonoBehaviour:
   - {fileID: 1928411188}
   - {fileID: 1353466578}
   levelHandler: {fileID: 0}
+  pathRunner: {fileID: 0}
   linkedSprite: {fileID: 21300000, guid: c2bd2b83d2c3fc04e84d6144d0ed249f, type: 3}
   travelSpeed: 1
   travelDistance: 10
@@ -3379,7 +3382,7 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 2100000, guid: c3065c5ab1373f94f9f0dc81bac0b762, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
@@ -3414,7 +3417,7 @@ GameObject:
   - component: {fileID: 1791462770}
   - component: {fileID: 1791462769}
   m_Layer: 5
-  m_Name: Discription
+  m_Name: Description
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3436,8 +3439,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 576, y: -333.1667}
-  m_SizeDelta: {x: 500, y: 150}
+  m_AnchoredPosition: {x: 460.79996, y: -869.2001}
+  m_SizeDelta: {x: 536.9, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1791462769
 MonoBehaviour:
@@ -3466,7 +3469,7 @@ MonoBehaviour:
     m_BestFit: 1
     m_MinSize: 0
     m_MaxSize: 300
-    m_Alignment: 4
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -3475,6 +3478,8 @@ MonoBehaviour:
   m_Text: 'Credits/Legal:
 
     Powerswitch LLC
+
+    Thomas Cannarella
 
     Nicholas Belegrinos, Jordan Leach, William Smith, Abbigayle Reisig, Brandon Owens
 
@@ -3530,7 +3535,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 203.2998, y: 1900.1}
+  m_AnchoredPosition: {x: 203.2998, y: 1750}
   m_SizeDelta: {x: 304.2, y: 194.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1819372087
@@ -3629,8 +3634,8 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Material: {fileID: 2100000, guid: c3065c5ab1373f94f9f0dc81bac0b762, type: 2}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3955,7 +3960,7 @@ Prefab:
         type: 2}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 2100000, guid: ad87694f1f653e74fbb3486685972833, type: 2}
+      objectReference: {fileID: 2100000, guid: c3065c5ab1373f94f9f0dc81bac0b762, type: 2}
     - target: {fileID: 114662308023938992, guid: f9e46b77faae8624b89a9a2ca38b5e90,
         type: 2}
       propertyPath: m_Type
