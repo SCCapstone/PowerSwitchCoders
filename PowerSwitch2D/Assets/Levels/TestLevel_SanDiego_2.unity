@@ -326,7 +326,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 7edfe7d9f5aaadf468c6f5ccad1acc47, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 063882e448e9c504db019aaa49918af2, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -896,18 +896,7 @@ Prefab:
   m_IsPrefabParent: 0
 --- !u!224 &100452610 stripped
 RectTransform:
-  m_PrefabParentObject: {fileID: 224220783054923036, guid: f9e46b77faae8624b89a9a2ca38b5e90,
-    type: 2}
-  m_PrefabInternal: {fileID: 100452609}
---- !u!114 &100452611 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114588934199335618, guid: f9e46b77faae8624b89a9a2ca38b5e90,
-    type: 2}
-  m_PrefabInternal: {fileID: 100452609}
-  m_Script: {fileID: -113659843, guid: f70555f144d8491a825f0804e09c671c, type: 3}
---- !u!1 &100452612 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1644239278374724, guid: f9e46b77faae8624b89a9a2ca38b5e90,
+  m_PrefabParentObject: {fileID: 224156171164913716, guid: f9e46b77faae8624b89a9a2ca38b5e90,
     type: 2}
   m_PrefabInternal: {fileID: 100452609}
 --- !u!1 &160362092
@@ -4054,6 +4043,13 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 114594726409158064, guid: be9ba5f4eecc08a4ba8b1d667cead49b,
+        type: 2}
+      propertyPath: m_Text
+      value: 'San Diego, CA
+
+'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: be9ba5f4eecc08a4ba8b1d667cead49b, type: 2}
   m_IsPrefabParent: 0
@@ -4819,7 +4815,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 8.68, y: -1.01}
+  m_AnchoredPosition: {x: 5, y: -4.56}
   m_SizeDelta: {x: 15, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1066976158
@@ -7927,11 +7923,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4600094935201076, guid: 1796b9e52586f7248a4af1137075caa8, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -7.64
+      value: -8.021
       objectReference: {fileID: 0}
     - target: {fileID: 4600094935201076, guid: 1796b9e52586f7248a4af1137075caa8, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -5.97
+      value: -5.601
       objectReference: {fileID: 0}
     - target: {fileID: 4600094935201076, guid: 1796b9e52586f7248a4af1137075caa8, type: 2}
       propertyPath: m_LocalPosition.z
@@ -7980,13 +7976,19 @@ Prefab:
     - target: {fileID: 224727826209191882, guid: 1796b9e52586f7248a4af1137075caa8,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 1
+      value: 4.92
       objectReference: {fileID: 0}
     - target: {fileID: 224727826209191882, guid: 1796b9e52586f7248a4af1137075caa8,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -1.5
+      value: -4.39
       objectReference: {fileID: 0}
+    - target: {fileID: 212492716864664182, guid: 1796b9e52586f7248a4af1137075caa8,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4941edc050f12b14cbc799ebce511660,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1796b9e52586f7248a4af1137075caa8, type: 2}
   m_IsPrefabParent: 0
@@ -8795,7 +8797,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.82, y: -1.19}
+  m_AnchoredPosition: {x: 4.93, y: -4.87}
   m_SizeDelta: {x: 15, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1736150376
@@ -9727,7 +9729,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6dc15ed863f697142ad9fa1e322f41b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  VolumeSlider: {fileID: 100452611}
+  VolumeSlider: {fileID: 0}
   Music: {fileID: 1953310646}
 --- !u!82 &1953310646
 AudioSource:
@@ -10088,7 +10090,7 @@ Prefab:
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 100452612}
+      objectReference: {fileID: 0}
     - target: {fileID: 114594037431661556, guid: 0f34371e34e18b04e98114e7464ef276,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -10680,7 +10682,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 8.99, y: -0.75}
+  m_AnchoredPosition: {x: 5.18, y: -4.52}
   m_SizeDelta: {x: 15, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2061251125

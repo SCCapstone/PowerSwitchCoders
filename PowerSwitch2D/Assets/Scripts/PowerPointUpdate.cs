@@ -23,6 +23,7 @@ public class PowerPointUpdate : MonoBehaviour {
     private int powerPoints;
     private int count = 0;
     private float pathCost;
+    private float pathTime;
     private float endVal;
     private bool textUpdate = false;
     //https://answers.unity.com/questions/122349/how-to-run-update-every-second.html    
@@ -88,14 +89,18 @@ public class PowerPointUpdate : MonoBehaviour {
 
     public void doUpdate()
     {
+        //Do check for failiing or winning path here -  if failing, run out of power 5 seconds before pathtime
+        //If winning, don't 
         pathCost = pathHandler.pickedPathCost;
+        pathTime = pathHandler.GetTravelTime();
         endVal = powerPoints - pathCost;
         if (endVal <= 0.0f)
         {
             endVal = 0.0f;
         }
         //15 seconds for now
-        StartCoroutine(AnimateSliderOverTime(15.0f));
+        //StartCoroutine(AnimateSliderOverTime(15.0f));
+        StartCoroutine(AnimateSliderOverTime(pathTime));
         textUpdate = true;
     }
 

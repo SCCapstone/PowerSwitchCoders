@@ -767,6 +767,11 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 117739907}
+--- !u!224 &147125568 stripped
+RectTransform:
+  m_PrefabParentObject: {fileID: 224156171164913716, guid: f9e46b77faae8624b89a9a2ca38b5e90,
+    type: 2}
+  m_PrefabInternal: {fileID: 770809417}
 --- !u!1 &161518035
 GameObject:
   m_ObjectHideFlags: 0
@@ -901,7 +906,7 @@ Prefab:
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 770809420}
+      objectReference: {fileID: 0}
     - target: {fileID: 114594037431661556, guid: 0f34371e34e18b04e98114e7464ef276,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -4582,22 +4587,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f9e46b77faae8624b89a9a2ca38b5e90, type: 2}
   m_IsPrefabParent: 0
---- !u!224 &770809418 stripped
-RectTransform:
-  m_PrefabParentObject: {fileID: 224220783054923036, guid: f9e46b77faae8624b89a9a2ca38b5e90,
-    type: 2}
-  m_PrefabInternal: {fileID: 770809417}
---- !u!114 &770809419 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114588934199335618, guid: f9e46b77faae8624b89a9a2ca38b5e90,
-    type: 2}
-  m_PrefabInternal: {fileID: 770809417}
-  m_Script: {fileID: -113659843, guid: f70555f144d8491a825f0804e09c671c, type: 3}
---- !u!1 &770809420 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1644239278374724, guid: f9e46b77faae8624b89a9a2ca38b5e90,
-    type: 2}
-  m_PrefabInternal: {fileID: 770809417}
 --- !u!1 &772916135
 GameObject:
   m_ObjectHideFlags: 0
@@ -7283,7 +7272,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6dc15ed863f697142ad9fa1e322f41b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  VolumeSlider: {fileID: 770809419}
+  VolumeSlider: {fileID: 0}
   Music: {fileID: 1514697120}
 --- !u!82 &1514697120
 AudioSource:
@@ -7573,7 +7562,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 9, y: -1}
+  m_AnchoredPosition: {x: 4.94, y: -4.55}
   m_SizeDelta: {x: 15, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1534352594
@@ -7797,12 +7786,12 @@ Prefab:
     - target: {fileID: 224727826209191882, guid: 1796b9e52586f7248a4af1137075caa8,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 4.82
       objectReference: {fileID: 0}
     - target: {fileID: 224727826209191882, guid: 1796b9e52586f7248a4af1137075caa8,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -1.5
+      value: -4.45
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1796b9e52586f7248a4af1137075caa8, type: 2}
@@ -9621,7 +9610,7 @@ RectTransform:
   - {fileID: 432853732}
   - {fileID: 949156800}
   - {fileID: 387254818}
-  - {fileID: 770809418}
+  - {fileID: 147125568}
   - {fileID: 1121627929}
   - {fileID: 2105505829}
   - {fileID: 256117183}

@@ -27,9 +27,9 @@ public class PathHandler : MonoBehaviour {
     //Variance should never be larger than half the value of the cheapest powersource, or a cost might be set < 0.
     //private int variance;
 
-    private string[] vehicleInts = { "Dummy", "Bike", "Car", "Boat", "Train" };
+    private string[] vehicleInts = { "Dummy", "Bike", "Car", "Boat", "Train", "Plane"};
     private string[] pathJoints = { "AB", "BC", "CD", "DE", "EF", "FG" };
-    private string[] fuelTypes = { "Dummy", "man", "oil", "wind", "coal" };
+    private string[] fuelTypes = { "Dummy", "man", "oil", "wind", "coal", "electric"};
     //will therefore need a checkUpgrades function 
 
     private int pCursor = 0;
@@ -37,6 +37,7 @@ public class PathHandler : MonoBehaviour {
 
     
     private int[] playerFuels;
+    private float trueDistance;
 
     //GIZMOS
     public void OnDrawGizmos()
@@ -121,6 +122,7 @@ public class PathHandler : MonoBehaviour {
             return null;
         }
         MovementPath newMove = tempPath.GetComponent<MovementPath>();
+        AddTravelTime(newMove);
         return newMove;
     }
 
@@ -162,7 +164,7 @@ public class PathHandler : MonoBehaviour {
         return 0;
     }
 
-    void CheckWinningPath()
+    public bool CheckWinningPath()
     {
         float playerCost = 0;
         for (int i = 0; i < playerPaths.Length; i++)
@@ -174,12 +176,31 @@ public class PathHandler : MonoBehaviour {
         {
             Debug.Log("This path will FAIL");
             Debug.Log(playerCost);
+            return false;
         } else
         {
             Debug.Log("This path will PASS");
             Debug.Log(playerCost);
+            return true;
         }
             
+    }
+
+    void AddTravelTime(MovementPath travelPath)
+    {
+        //
+        for (int i = 1; i < travelPath.PathSequence.Length; i++)
+        {
+            Vector3 aLoc = travelPath.PathSequence[i].transform.position;
+            Vector3 bLoc = travelPath.PathSequence[i - 1].transform.position;
+            //Get the time it takes to travel between each point
+            trueDistance += (Vector3.Distance(aLoc, bLoc) / travelPath.travelSpeed);
+        }
+    }
+
+    public float GetTravelTime()
+    {
+        return trueDistance;
     }
 
 }
