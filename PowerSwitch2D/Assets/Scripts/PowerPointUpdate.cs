@@ -26,6 +26,7 @@ public class PowerPointUpdate : MonoBehaviour {
     private float pathTime;
     private float endVal;
     private bool textUpdate = false;
+    private bool hasLost = false;
     //https://answers.unity.com/questions/122349/how-to-run-update-every-second.html    
     //do above
 
@@ -48,7 +49,7 @@ public class PowerPointUpdate : MonoBehaviour {
         powerPoints = pathHandler.powerPoints;
         pSlider.value = pSlider.maxValue = pathHandler.powerPoints;
         pPoints.text = (Mathf.Floor(100 * (pSlider.value / pSlider.maxValue))).ToString();
-        Debug.Log(100 * (pSlider.value / pSlider.maxValue));
+        //Debug.Log(100 * (pSlider.value / pSlider.maxValue));
 	}
 	
 	// Update is called once per frame
@@ -77,14 +78,15 @@ public class PowerPointUpdate : MonoBehaviour {
                 pIcon.GetComponentInParent<Spinner>().rotationSpeed = 0;
                 Time.timeScale = 0.0f;
                 count = 3;
+                hasLost = true;
             }
         }
 
 	}
 
-    public void doUpdate()
+    public void DoUpdate()
     {
-        //Do check for failiing or winning path here -  if failing, run out of power 5 seconds before pathtime
+        //Do check for failiing or winning path here -  if failing, run out of power 2 seconds before pathtime
         //If winning, don't 
         pathCost = pathHandler.pickedPathCost;
         pathTime = pathHandler.GetTravelTime();
@@ -143,4 +145,10 @@ public class PowerPointUpdate : MonoBehaviour {
             yield return null;
         }
     }
+
+    public bool LostGame()
+    {
+        return hasLost;
+    }
+
 }

@@ -17,6 +17,7 @@ public class PathRunner : MonoBehaviour {
     [Header("Explosion Effect")]
     [Tooltip("Boom")]
     public GameObject boom;
+    private bool hasWon = false;
 
     // Use this for initialization
     void Start () {
@@ -25,13 +26,13 @@ public class PathRunner : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
+        /*
         if (Time.time >= nextUpdate)
         {
             nextUpdate = Time.time + nextUpdate;
-            FuelBurnTest();
+            //FuelBurnTest();
         }
-
+        */
     }
 
     void FuelBurnTest()
@@ -41,6 +42,7 @@ public class PathRunner : MonoBehaviour {
         dataHandler.updatePowerPoints(points);
     }
 
+    /*
     public MovementPath OldPowerSwitch()
     {
         
@@ -60,14 +62,14 @@ public class PathRunner : MonoBehaviour {
         pathCursor++;
         return newPath;
     }
-
+    */
     public void PowerSwitch()
     {
         if (pathCursor >= pathHandler.playerPaths.Length)
         {
             int lastPath = pathHandler.playerPaths.Length;
             newPath = pathHandler.playerPaths[lastPath-1];
-            EndGame(true);
+            hasWon = true;
             if (newPath == null)
             {
                 Debug.Log("Critical Failure");
@@ -76,7 +78,7 @@ public class PathRunner : MonoBehaviour {
             playerMover.Speed = 0;
         } else
         {
-            playerMover.Speed = 0;
+            //playerMover.Speed = 0;
             Explode();
             newPath = pathHandler.playerPaths[pathCursor];
             playerMover.MyMovementPath = newPath;
@@ -90,10 +92,11 @@ public class PathRunner : MonoBehaviour {
 
     }
 
-    public void EndGame(bool hasWon)
+    public bool WinGame()
     {
         //either win or lose, true or false
-        Time.timeScale = 0.0f;
+        //Time.timeScale = 0.0f;
+        return hasWon;
     }
 
     public void Explode()

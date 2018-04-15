@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class DataHandler : MonoBehaviour {
 
@@ -63,5 +64,11 @@ public class DataHandler : MonoBehaviour {
     public void updatePowerPoints(int newValue)
     {
         powerPoints = newValue;
+    }
+
+    public void ReloadScene()
+    {
+        Scene currentScene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(currentScene.name);
     }
 }

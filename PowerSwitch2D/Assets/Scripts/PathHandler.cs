@@ -38,6 +38,7 @@ public class PathHandler : MonoBehaviour {
     
     private int[] playerFuels;
     private float trueDistance;
+    public bool canStart = false;
 
     //GIZMOS
     public void OnDrawGizmos()
@@ -54,6 +55,7 @@ public class PathHandler : MonoBehaviour {
     private void Awake()
     {
         powerPoints = costData.powerPoints;
+        Time.timeScale = 1.0f;
     }
 
     // Use this for initialization
@@ -99,6 +101,7 @@ public class PathHandler : MonoBehaviour {
         {
             Debug.Log("Picked Max Number of Points");
             CheckWinningPath();
+            canStart = true;
             //Debug.Log()
             //Player is done picking, calculate if their path will win or not using above IF
             //Also activate car sprite and set to correct value based on path, but don't move it yet
@@ -174,13 +177,13 @@ public class PathHandler : MonoBehaviour {
         }
         if ( Mathf.Floor(playerCost) > powerPoints)
         {
-            Debug.Log("This path will FAIL");
-            Debug.Log(playerCost);
+            //Debug.Log("This path will FAIL");
+            //Debug.Log(playerCost);
             return false;
         } else
         {
-            Debug.Log("This path will PASS");
-            Debug.Log(playerCost);
+            //Debug.Log("This path will PASS");
+            //Debug.Log(playerCost);
             return true;
         }
             
