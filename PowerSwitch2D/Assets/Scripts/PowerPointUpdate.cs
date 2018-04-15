@@ -19,7 +19,7 @@ public class PowerPointUpdate : MonoBehaviour {
     public Color32 Cyellow = new Color32(255,255,0,255);
     public Color32 Cred = new Color32(255, 0, 0, 255);
 
-    private float nextUpdate = 0.5f;
+    //private float nextUpdate = 0.5f;
     private int powerPoints;
     private int count = 0;
     private float pathCost;
@@ -53,13 +53,7 @@ public class PowerPointUpdate : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		/*
-        if (Time.time >= nextUpdate)
-        {
-            nextUpdate = Time.time + nextUpdate;
-            UpdatePanel();
-        }
-        */
+		//Update actual Power Points text and Panel item colors 
         if (textUpdate)
         {
             pPoints.text = (Mathf.Floor(100 * (pSlider.value / pSlider.maxValue))).ToString();
@@ -81,6 +75,7 @@ public class PowerPointUpdate : MonoBehaviour {
             {
                 StopCoroutine(AnimateSliderOverTime(15.0f));
                 pIcon.GetComponentInParent<Spinner>().rotationSpeed = 0;
+                Time.timeScale = 0.0f;
                 count = 3;
             }
         }
@@ -98,9 +93,17 @@ public class PowerPointUpdate : MonoBehaviour {
         {
             endVal = 0.0f;
         }
+        bool willWin = pathHandler.CheckWinningPath();
         //15 seconds for now
         //StartCoroutine(AnimateSliderOverTime(15.0f));
-        StartCoroutine(AnimateSliderOverTime(pathTime));
+        if (willWin)
+        {
+            StartCoroutine(AnimateSliderOverTime(pathTime));
+        } else
+        {
+            StartCoroutine(AnimateSliderOverTime(pathTime-3.0f));
+        }
+        
         textUpdate = true;
     }
 
@@ -118,6 +121,7 @@ public class PowerPointUpdate : MonoBehaviour {
             pPoints.color = Cyellow;
             count = 1;
         }
+        //PowerPoints below 25%
         if (count == 1 && powerPoints <= (pSlider.maxValue / 4))
         {
             pFill.color = Cred;
@@ -127,7 +131,7 @@ public class PowerPointUpdate : MonoBehaviour {
         }
     }
 
-    //from https://forum.unity.com/threads/setting-slider-value-over-time-using-c-script.377402/
+    //Animate slider over certain amount of time 
     IEnumerator AnimateSliderOverTime(float seconds)
     {
         float animationTime = 0f;
