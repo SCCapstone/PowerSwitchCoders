@@ -8,6 +8,7 @@ public class AudioHandler : MonoBehaviour {
 
     public Slider VolumeSlider;
     public AudioSource Music;
+    //public AudioListener Game;
 	// Use this for initialization
 	void Start () {
         VolumeSlider.onValueChanged.AddListener(delegate { UpdateVolume(); });
@@ -15,6 +16,7 @@ public class AudioHandler : MonoBehaviour {
         if (PlayerPrefs.HasKey("MusicVolume"))
         {
             Music.volume = VolumeSlider.value = PlayerPrefs.GetFloat("MusicVolume");
+            AudioListener.volume = VolumeSlider.value;  //Control Global game volume
         }
 	}
 	
@@ -26,6 +28,7 @@ public class AudioHandler : MonoBehaviour {
     public void UpdateVolume ()
     {
         Music.volume = VolumeSlider.value;
+        AudioListener.volume = VolumeSlider.value;
         //Possibly move this "save preferred volume" code to when user exits the settings menu
         PlayerPrefs.SetFloat("MusicVolume", VolumeSlider.value);
     }
