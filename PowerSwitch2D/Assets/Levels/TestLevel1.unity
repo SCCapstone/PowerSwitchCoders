@@ -3890,7 +3890,7 @@ MonoBehaviour:
   pathRunner: {fileID: 1590182391}
   linkedSprite: {fileID: 21300000, guid: ea3c9b2b62268dc458c118bae1cc38e1, type: 3}
   travelSpeed: 0.5
-  travelDistance: 5
+  travelDistance: 4
 --- !u!1 &685631476
 GameObject:
   m_ObjectHideFlags: 0
