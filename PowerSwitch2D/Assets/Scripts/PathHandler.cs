@@ -90,7 +90,7 @@ public class PathHandler : MonoBehaviour {
         string fuelChoice = fuelTypes[choice];
         int nextFuel = FuelSetter(fuelChoice);
         playerFuels.SetValue(nextFuel, pCursor);
-        Debug.Log(fuelChoice+nextFuel);
+        //Debug.Log(fuelChoice+nextFuel);
 
         //int nextFuel = FuelSetter(fuel);
         //playerFuels.SetValue(nextFuel, pCursor);
@@ -99,7 +99,7 @@ public class PathHandler : MonoBehaviour {
         pCursor++;
         if (pCursor >= playerPaths.Length)
         {
-            Debug.Log("Picked Max Number of Points");
+            //Debug.Log("Picked Max Number of Points");
             CheckWinningPath();
             canStart = true;
             //Debug.Log()
@@ -175,6 +175,7 @@ public class PathHandler : MonoBehaviour {
             playerCost += playerFuels[i] * (playerPaths[i].travelDistance / playerPaths[i].travelSpeed);
             pickedPathCost = playerCost;
         }
+        Debug.Log(playerCost);
         if ( Mathf.Floor(playerCost) > powerPoints)
         {
             //Debug.Log("This path will FAIL");
@@ -186,6 +187,7 @@ public class PathHandler : MonoBehaviour {
             //Debug.Log(playerCost);
             return true;
         }
+        
             
     }
 

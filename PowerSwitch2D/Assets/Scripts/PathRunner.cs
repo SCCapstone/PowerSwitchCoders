@@ -12,7 +12,7 @@ public class PathRunner : MonoBehaviour {
     public SpriteRenderer playerSprite;
     private int pathCursor;
     private MovementPath newPath;
-    private float nextUpdate = 0.05f;
+    //private float nextUpdate = 0.05f;
 
     [Header("Explosion Effect")]
     [Tooltip("Boom")]
