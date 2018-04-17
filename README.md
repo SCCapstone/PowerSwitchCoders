@@ -3,7 +3,7 @@ PowerSwitch Coders - Android Application
 
 Unit Testing - Steps
 1. Select Unity Branch and download to appropriate folder
-2. Download Unity 2017.3.0f3 and open the PowerSwitch2D project
+2. Download latest Unity version and open the PowerSwitch2D project
 3. Open PowerSwitch2D/Assets/Levels/TestLevel1.unity in the Unity Editor
 4. Select Window tab -> Test Runner to launch Unity's Test Runner
 5. For behavioral testing, select the PlayMode tab and hit Run all
