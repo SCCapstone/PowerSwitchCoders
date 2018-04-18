@@ -1751,7 +1751,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 60
+    m_FontSize: 46
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -1762,11 +1762,15 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "PowerSwitch is an energy game designed to test your knowledge of the different
-    forms of energy and how to use them efficiently.\r\n\r\nTo play, tap each point
-    and pick the vehicle you'll use to travel to the next destination. Once you have
-    selected a vehicle for each destination point, hit \u2018GO and see if the vehicles
-    and power sources you picked paid off!\r\n"
+  m_Text: "PowerSwitch is a smart energy game designed to build your awareness of
+    the different forms of energy and how to use them more efficiently\n\r\nTo play,
+    tap each point and pick the vehicle you'll use to travel to the next destination.
+    Once you have selected a vehicle for each destination point, hit \u2018GO' and
+    see if your choices of vehicles and energy sources you picked get you to your
+    last stop before running out of powerpoints. The car is battery powered, train
+    is coal powered, bike is man powered, boat is wind powered, and plane is diesel
+    powered. Vehicle upgrades are also available with powerpoints. Energy source market
+    pricing changes each level, so Choose smartly! \n\n"
 --- !u!222 &286954829
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3830,6 +3834,15 @@ Prefab:
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114863220220916212, guid: b91cb41e278ad8c479078d1f1edffec0,
+        type: 2}
+      propertyPath: m_Text
+      value: 'Congratulations, you are a Powerswitch Champion!
+
+        Tap the button below to continue!
+
+'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b91cb41e278ad8c479078d1f1edffec0, type: 2}
@@ -5974,7 +5987,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: D
+  m_text: END
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 715b80e429c437e40867928a4e1fc975, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 715b80e429c437e40867928a4e1fc975, type: 2}
@@ -6001,8 +6014,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -6041,7 +6054,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 9.534828, w: 0}
   m_textInfo:
     textComponent: {fileID: 946215860}
-    characterCount: 1
+    characterCount: 3
     spriteCount: 0
     spaceCount: 0
     wordCount: 1

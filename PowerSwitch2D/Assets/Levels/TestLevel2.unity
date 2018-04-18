@@ -4234,9 +4234,9 @@ Prefab:
     - target: {fileID: 114863220220916212, guid: b91cb41e278ad8c479078d1f1edffec0,
         type: 2}
       propertyPath: m_Text
-      value: 'Congratulations, you''ve beaten the level!
+      value: 'Congratulations, you are a Powerswitch Champion!
 
-        Tap the button below to continue to the next one!
+        Tap the button below to continue to the next level!
 
 '
       objectReference: {fileID: 0}
@@ -4818,7 +4818,32 @@ Prefab:
     - target: {fileID: 114663655124761316, guid: 1796b9e52586f7248a4af1137075caa8,
         type: 2}
       propertyPath: m_text
-      value: C
+      value: END
+      objectReference: {fileID: 0}
+    - target: {fileID: 114663655124761316, guid: 1796b9e52586f7248a4af1137075caa8,
+        type: 2}
+      propertyPath: m_textInfo.characterCount
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114663655124761316, guid: 1796b9e52586f7248a4af1137075caa8,
+        type: 2}
+      propertyPath: m_firstOverflowCharacterIndex
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114663655124761316, guid: 1796b9e52586f7248a4af1137075caa8,
+        type: 2}
+      propertyPath: m_textInfo.lineCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114663655124761316, guid: 1796b9e52586f7248a4af1137075caa8,
+        type: 2}
+      propertyPath: m_fontSize
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 114663655124761316, guid: 1796b9e52586f7248a4af1137075caa8,
+        type: 2}
+      propertyPath: m_fontSizeBase
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1796b9e52586f7248a4af1137075caa8, type: 2}

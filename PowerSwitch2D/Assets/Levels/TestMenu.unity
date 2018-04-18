@@ -1290,11 +1290,15 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "PowerSwitch is an energy game designed to test your knowledge of the different
-    forms of energy and how to use them efficiently.\r\n\r\nTo play, tap each point
-    and pick the vehicle you'll use to travel to the next destination. Once you have
-    selected a vehicle for each destination point, hit \u2018GO' and see if the vehicles
-    and power sources you picked paid off!\r\n"
+  m_Text: "PowerSwitch is a smart energy game designed to build your awareness of
+    the different forms of energy and how to use them more efficiently\n\r\nTo play,
+    tap each point and pick the vehicle you'll use to travel to the next destination.
+    Once you have selected a vehicle for each destination point, hit \u2018GO' and
+    see if your choices of vehicles and energy sources you picked get you to your
+    last stop before running out of powerpoints. The car is battery powered, train
+    is coal powered, bike is man powered, boat is wind powered, and plane is diesel
+    powered. Vehicle upgrades are also available with powerpoints. Energy source market
+    pricing changes each level, so Choose smartly! \n"
 --- !u!222 &626092167
 CanvasRenderer:
   m_ObjectHideFlags: 0
