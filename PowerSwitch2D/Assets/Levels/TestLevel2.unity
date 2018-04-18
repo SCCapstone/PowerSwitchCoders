@@ -4598,7 +4598,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1970555409329702, guid: b91cb41e278ad8c479078d1f1edffec0, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114863220220916212, guid: b91cb41e278ad8c479078d1f1edffec0,
         type: 2}
@@ -4608,6 +4608,21 @@ Prefab:
         Tap the button below to continue to the next level!
 
 '
+      objectReference: {fileID: 0}
+    - target: {fileID: 224381668148406598, guid: b91cb41e278ad8c479078d1f1edffec0,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -14
+      objectReference: {fileID: 0}
+    - target: {fileID: 224381668148406598, guid: b91cb41e278ad8c479078d1f1edffec0,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 294
+      objectReference: {fileID: 0}
+    - target: {fileID: 114197164343414964, guid: b91cb41e278ad8c479078d1f1edffec0,
+        type: 2}
+      propertyPath: m_Color.a
+      value: 0.791
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b91cb41e278ad8c479078d1f1edffec0, type: 2}
