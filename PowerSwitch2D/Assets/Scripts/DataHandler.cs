@@ -32,7 +32,7 @@ public class DataHandler : MonoBehaviour {
     // Use this for initialization
     private void Awake()
     {
-        RandomizeCosts();
+        UpdateCostText();
     }
 
     void Start () {
@@ -61,7 +61,7 @@ public class DataHandler : MonoBehaviour {
         coalText.text = coalCost.ToString();
     }
 
-    public void updatePowerPoints(int newValue)
+    public void UpdatePowerPoints(int newValue)
     {
         powerPoints = newValue;
     }
@@ -70,5 +70,14 @@ public class DataHandler : MonoBehaviour {
     {
         Scene currentScene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(currentScene.name);
+    }
+
+    private void UpdateCostText()
+    {
+        manText.text = manCost.ToString();
+        windText.text = windCost.ToString();
+        electricText.text = electricCost.ToString();
+        oilText.text = oilCost.ToString();
+        coalText.text = coalCost.ToString();
     }
 }

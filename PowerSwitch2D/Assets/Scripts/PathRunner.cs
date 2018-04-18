@@ -35,13 +35,14 @@ public class PathRunner : MonoBehaviour {
         */
     }
 
+    /*
     void FuelBurnTest()
     {
         int points = dataHandler.powerPoints;
         points -= 5;
         dataHandler.updatePowerPoints(points);
     }
-
+    */
     /*
     public MovementPath OldPowerSwitch()
     {

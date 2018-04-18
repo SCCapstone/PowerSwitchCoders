@@ -2028,7 +2028,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 203.3, y: 1900.1}
+  m_AnchoredPosition: {x: 203.2998, y: 1900.1}
   m_SizeDelta: {x: 304.2, y: 194.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &571807880
@@ -5660,7 +5660,7 @@ MonoBehaviour:
   - {fileID: 264933812}
   levelHandler: {fileID: 0}
   pathRunner: {fileID: 568481273}
-  linkedSprite: {fileID: 21300000, guid: d69cb0215908c4b43bdcdbc0ed72103a, type: 3}
+  linkedSprite: {fileID: 21300000, guid: d965e1ffc13968e4db56c12f5643bfd0, type: 3}
   travelSpeed: 1
   travelDistance: 2
 --- !u!4 &1616176779
@@ -6130,7 +6130,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1000290926921088, guid: 7140bb9758f75544c85d7cb713b70fdb, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114120708562569914, guid: 7140bb9758f75544c85d7cb713b70fdb,
         type: 2}
@@ -7422,6 +7422,26 @@ Prefab:
       propertyPath: FactText
       value: 
       objectReference: {fileID: 1803108510}
+    - target: {fileID: 114446215351012872, guid: 8f354317c8b285745b4afde355b24123,
+        type: 2}
+      propertyPath: oilCost
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 114446215351012872, guid: 8f354317c8b285745b4afde355b24123,
+        type: 2}
+      propertyPath: coalCost
+      value: 38
+      objectReference: {fileID: 0}
+    - target: {fileID: 114446215351012872, guid: 8f354317c8b285745b4afde355b24123,
+        type: 2}
+      propertyPath: manCost
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 114446215351012872, guid: 8f354317c8b285745b4afde355b24123,
+        type: 2}
+      propertyPath: windCost
+      value: 14
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8f354317c8b285745b4afde355b24123, type: 2}
   m_IsPrefabParent: 0
