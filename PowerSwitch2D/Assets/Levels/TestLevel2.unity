@@ -3426,6 +3426,10 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: SetActive
       objectReference: {fileID: 0}
+    - target: {fileID: 1249119680743336, guid: 0f34371e34e18b04e98114e7464ef276, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f34371e34e18b04e98114e7464ef276, type: 2}
   m_IsPrefabParent: 0
@@ -5603,16 +5607,11 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 1068321673986458, guid: be9ba5f4eecc08a4ba8b1d667cead49b, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114071715905958478, guid: be9ba5f4eecc08a4ba8b1d667cead49b,
+    - target: {fileID: 114857108504688826, guid: be9ba5f4eecc08a4ba8b1d667cead49b,
         type: 2}
-      propertyPath: m_Sprite
+      propertyPath: costData
       value: 
-      objectReference: {fileID: 21300000, guid: 7f1bd24d99c62214bb369e5f0e3244e1,
-        type: 3}
+      objectReference: {fileID: 1906104977}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: be9ba5f4eecc08a4ba8b1d667cead49b, type: 2}
   m_IsPrefabParent: 0
@@ -5748,28 +5747,6 @@ Transform:
   m_Father: {fileID: 45419603}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1658428951 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1298278583321874, guid: be9ba5f4eecc08a4ba8b1d667cead49b,
-    type: 2}
-  m_PrefabInternal: {fileID: 1596143181}
---- !u!114 &1658428952
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1658428951}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d675c5717979694aaead0933b0f3077, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  costData: {fileID: 1906104977}
-  variance: 5
-  powerPoints: 100
-  playerPaths:
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!1001 &1671228594
 Prefab:
   m_ObjectHideFlags: 0
