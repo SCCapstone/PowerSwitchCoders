@@ -1,6 +1,8 @@
 # Team Members for PowerSwitchCoders
 
 ### Will Smith
+ * Graduating Senior
+ * Computer Science
 
 ### Brandon Owens
 
