@@ -7,16 +7,22 @@
   <span style="color:blue"> Demo Video </span> 
 </p>
 
-### Select your vehicles
+<span>
+  <h3 align="right">
+    Select your vehicles
+  </h3>
+</span>
 
-### Consider the energy market
+<span>
+  <h3 align="left">
+    Consider the energy market
+  </h3>
+</span>
 
-### Watch your powerpoints
-
-
-
-
-
-
+<span>
+  <h3 align="right">
+    Watch your Powerpoints
+  </h3>
+</span>
 
 <a href="https://sccapstone.github.io/PowerSwitchCoders/about" title="About Page"> About Our Team </a>
