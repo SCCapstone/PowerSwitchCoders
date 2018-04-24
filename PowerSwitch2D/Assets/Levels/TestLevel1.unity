@@ -2962,6 +2962,11 @@ Prefab:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 224727826209191882, guid: 1796b9e52586f7248a4af1137075caa8,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1796b9e52586f7248a4af1137075caa8, type: 2}
   m_IsPrefabParent: 0
@@ -5270,7 +5275,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 005067c0871ad3e469ddf35a0345c8d5, type: 3}
   m_Color: {r: 0.9264706, g: 0.9264706, b: 0.9264706, a: 1}
   m_FlipX: 0
