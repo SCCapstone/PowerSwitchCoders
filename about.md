@@ -1,13 +1,13 @@
-## Team Members for PowerSwitchCoders
+# Team Members for PowerSwitchCoders
 
-# Will Smith
+### Will Smith
 
-# Brandon Owens
+### Brandon Owens
 
-# Jordan Leach
+### Jordan Leach
   * Graduating senior
   * Computer Science
 
-# Nicholas
+### Nicholas
 
-# Abigail
+### Abigail
