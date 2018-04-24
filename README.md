@@ -21,3 +21,7 @@ Unit Testing - Steps
   displaying an error from another script
   5.b: Debug log should read "You have clicked the button"
 6. For other testing, select the EditMode Tab and hit Run all - all tests should pass
+
+
+
+<a href="https://sccapstone.github.io/PowerSwitchCoders/about" title="About Page"> About Our Team </a>
