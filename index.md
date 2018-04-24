@@ -8,21 +8,18 @@
 </p>
 
 <div>
-  <span>
     <h3 align="right">
       Select your vehicles
     </h3>
 </div>
 
 <div>
-  <span>
     <h3 align="left">
       Consider the energy market
     </h3>
 </div>
 
 <div>
-  <span>
     <h3 align="right">
       Watch your Powerpoints
     </h3>
