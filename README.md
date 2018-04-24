@@ -4,10 +4,6 @@
 </p>
 
 
-<p align="center">
-  <span style="color:blue"> Demo Video </span> 
-</p>
-
 # PowerSwitchCoders
 PowerSwitch Coders - Android Application
 
