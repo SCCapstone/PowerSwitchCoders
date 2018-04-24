@@ -2616,11 +2616,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 569286364}
     m_Modifications:
-    - target: {fileID: 114742708435358800, guid: 3a36538aa849c4440a030c584557fa6b,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 224286144959728722, guid: 3a36538aa849c4440a030c584557fa6b,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -2721,36 +2716,6 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 940849599}
-    - target: {fileID: 114742708435358800, guid: 3a36538aa849c4440a030c584557fa6b,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
-      value: 
-      objectReference: {fileID: 1589484825}
-    - target: {fileID: 114742708435358800, guid: 3a36538aa849c4440a030c584557fa6b,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114742708435358800, guid: 3a36538aa849c4440a030c584557fa6b,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114742708435358800, guid: 3a36538aa849c4440a030c584557fa6b,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: SetActive
-      objectReference: {fileID: 0}
-    - target: {fileID: 114742708435358800, guid: 3a36538aa849c4440a030c584557fa6b,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 114742708435358800, guid: 3a36538aa849c4440a030c584557fa6b,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3a36538aa849c4440a030c584557fa6b, type: 2}
   m_IsPrefabParent: 0
