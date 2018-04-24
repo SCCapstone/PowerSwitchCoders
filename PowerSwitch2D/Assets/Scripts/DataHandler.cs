@@ -21,6 +21,7 @@ public class DataHandler : MonoBehaviour {
     public int oilCost = 30;
     public int coalCost = 35;
 
+
     //Variance should never be larger than half the value of the cheapest powersource, or a cost might be set < 0.
     public int variance = 5;
 

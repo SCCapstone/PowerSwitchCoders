@@ -26,13 +26,7 @@ public class PathRunner : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        /*
-        if (Time.time >= nextUpdate)
-        {
-            nextUpdate = Time.time + nextUpdate;
-            //FuelBurnTest();
-        }
-        */
+
     }
 
     /*
