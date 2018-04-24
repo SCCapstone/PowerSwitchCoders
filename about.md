@@ -8,10 +8,11 @@
   * Graduating senior
   * Computer Science
 
-### Nicholas
+### Nicholas Belegrinos
 
-### Abigail
-
+### Abbigayle Reisig
+  * Graduating senior
+  * Computer Science
 
 
 
