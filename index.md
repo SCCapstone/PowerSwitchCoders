@@ -8,3 +8,8 @@
 </p>
 
 
+
+
+
+
+<a href="https://sccapstone.github.io/PowerSwitchCoders/about" title="About Page"> About Our Team </a>
