@@ -19,9 +19,17 @@
 </h3>
 <img style="width: 402px; height: 810px;" align = "center" alt="Consider the Energy Market" title="Keyart-web" src="https://user-images.githubusercontent.com/18518060/39225015-196980d0-4818-11e8-91d1-c61ae381eb60.png">
 
+<p align="center">
+  Take a look at the energy prices on the top of the screen. Consider this when making your vehicle choices. Certain vehicles use more energy than others. However, a lower energy priced vehicle may take a longer path. Consider all the factors when playing a level.
+</p>
+
 <h3 align="right">
   Watch your Powerpoints
 </h3>
 <img style="width: 402px; height: 810px;" align = "center" alt="Select Your Vehicle" title="Keyart-web" src="https://user-images.githubusercontent.com/18518060/39225017-1bf9008c-4818-11e8-9865-1f62c78355e6.png">
+
+<p align="center">
+    After making your selections and pressing "Go!" watch how your PowerPoints drain. If you don't make it to the goal point before they run out, consider your vehicle choices and how they affected your PowerPoints supply. Try a different combination and see if anything changes!
+</p>
 
 <a href="https://sccapstone.github.io/PowerSwitchCoders/about" title="About Page"> About Our Team </a>
