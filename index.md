@@ -7,7 +7,7 @@
   <span style="color:blue"> Demo Video </span> 
 </p>
 
-<div style="padding:25.32% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/266429583" style="position:absolute;top:0;left:20%;width:50%;height:50%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+<div style="padding:125.32% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/266429583" style="position:absolute;top:0;left:15%;width:70%;height:70%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
 <h3 align="center">
   Consider the energy market
@@ -26,7 +26,7 @@
   Take a look at the energy prices on the top of the screen. Consider this when making your vehicle choices. Certain vehicles use more energy than others. However, a lower energy priced vehicle may take a longer path. Consider all the factors when playing a level.
 </p>
 
-<h3 align="right">
+<h3 align="center">
   Watch your Powerpoints
 </h3>
 <img style="width: 402px; height: 810px;" align = "center" alt="Select Your Vehicle" title="Keyart-web" src="https://user-images.githubusercontent.com/18518060/39225017-1bf9008c-4818-11e8-9865-1f62c78355e6.png">
