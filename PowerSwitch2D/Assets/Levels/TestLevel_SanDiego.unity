@@ -850,12 +850,12 @@ Prefab:
     - target: {fileID: 224732228046515212, guid: 0f34371e34e18b04e98114e7464ef276,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: -8
       objectReference: {fileID: 0}
     - target: {fileID: 224732228046515212, guid: 0f34371e34e18b04e98114e7464ef276,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 224732228046515212, guid: 0f34371e34e18b04e98114e7464ef276,
         type: 2}
@@ -3664,7 +3664,7 @@ RectTransform:
   - {fileID: 63324008}
   - {fileID: 1394595450}
   m_Father: {fileID: 1887368480}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5052,7 +5052,7 @@ RectTransform:
   - {fileID: 518526756}
   - {fileID: 941496641}
   m_Father: {fileID: 1887368480}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7133,7 +7133,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 7edfe7d9f5aaadf468c6f5ccad1acc47, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 71bb45a18e42bf9438872ebb6ad7b80a, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -8041,6 +8041,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c6d404c8cacd4242ab6d8990b4c3e9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  unlockNumber: 0
 --- !u!114 &1656490469
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8912,6 +8913,16 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 224517192127190758, guid: f8bdfda6ced8e3e4eb1d2f453ad6fe8b,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224517192127190758, guid: f8bdfda6ced8e3e4eb1d2f453ad6fe8b,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f8bdfda6ced8e3e4eb1d2f453ad6fe8b, type: 2}
   m_IsPrefabParent: 0
@@ -9539,12 +9550,12 @@ RectTransform:
   - {fileID: 1995144058}
   - {fileID: 1734180663}
   - {fileID: 164625258}
+  - {fileID: 640839556}
   - {fileID: 686636012}
   - {fileID: 77982919}
-  - {fileID: 640839556}
   - {fileID: 2088736072}
-  - {fileID: 432853732}
   - {fileID: 949156800}
+  - {fileID: 432853732}
   - {fileID: 387254818}
   - {fileID: 147125568}
   - {fileID: 1121627929}
@@ -9666,6 +9677,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c6d404c8cacd4242ab6d8990b4c3e9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  unlockNumber: 0
 --- !u!114 &1894553048
 MonoBehaviour:
   m_ObjectHideFlags: 0

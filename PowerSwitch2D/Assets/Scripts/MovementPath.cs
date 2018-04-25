@@ -20,7 +20,7 @@ public class MovementPath : MonoBehaviour
     public Transform[] PathSequence; //Array of all points in the path
 
     //
-    public LevelHandler levelHandler;
+    //public LevelHandler levelHandler;
     public PathRunner pathRunner;
     public Sprite linkedSprite;
     public float travelSpeed = 1.0f;
