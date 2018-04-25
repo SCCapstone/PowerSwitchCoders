@@ -17,6 +17,11 @@
   Each level has a different number of points and vehicles. Choose a combination of vehicles to get from the start point to the end point. Remember different combinations will use different types of energy.
 </p>
 
+<h3 align="center">
+  Select your vehicles
+</h3>
+<img style="width: 402px; height: 810px;" align="center" alt="Select Your Vehicle" title="Keyart-web" src="https://user-images.githubusercontent.com/18518060/39225009-171978ee-4818-11e8-8698-18b1ae6e0e8d.png">
+
 <p align="center">
   Take a look at the energy prices on the top of the screen. Consider this when making your vehicle choices. Certain vehicles use more energy than others. However, a lower energy priced vehicle may take a longer path. Consider all the factors when playing a level.
 </p>
