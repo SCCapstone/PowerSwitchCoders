@@ -7,7 +7,7 @@
   <span style="color:blue"> Demo Video </span> 
 </p>
 
-<div style="padding:125.32% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/266429583" style="position:absolute;top:0;left:20%;width:50%;height:50%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+<div style="padding:25.32% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/266429583" style="position:absolute;top:0;left:20%;width:50%;height:50%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
 <h3 align="center">
   Select your vehicles
