@@ -7264,6 +7264,11 @@ Prefab:
       propertyPath: windCost
       value: 14
       objectReference: {fileID: 0}
+    - target: {fileID: 114610851831885832, guid: 8f354317c8b285745b4afde355b24123,
+        type: 2}
+      propertyPath: unlockNumber
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8f354317c8b285745b4afde355b24123, type: 2}
   m_IsPrefabParent: 0

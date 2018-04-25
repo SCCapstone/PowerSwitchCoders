@@ -12,6 +12,7 @@ public class GUIHandler : MonoBehaviour {
     public GameObject FailScreen;
     public GameObject WinScreen;
     public GameObject audioHandler;
+    public int unlockNumber;
     private AudioSource audioSource;
     private bool done = false;
 
@@ -31,6 +32,9 @@ public class GUIHandler : MonoBehaviour {
         }
         if (!done && pathRunner.WinGame())
         {
+            if (PlayerPrefs.GetInt("unlock", 0) < unlockNumber)
+                PlayerPrefs.SetInt("unlock", unlockNumber);
+
             WinScreen.SetActive(true);
             //powerPointPanel.gameObject.SetActive(false);
             
