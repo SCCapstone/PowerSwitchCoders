@@ -5,7 +5,7 @@
 
 
 # PowerSwitchCoders
-PowerSwitch Coders - Android Application
+PowerSwitch - Android Application
 
 Unit Testing - Steps
 1. Select Unity Branch and download to appropriate folder
