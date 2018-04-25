@@ -23,6 +23,6 @@
 <h3 align="right">
   Watch your Powerpoints
 </h3>
-<img style="width: 402px; height: 810px;" align = "right" alt="Select Your Vehicle" title="Keyart-web" src="https://user-images.githubusercontent.com/18518060/39225017-1bf9008c-4818-11e8-9865-1f62c78355e6.png">
+<img style="width: 402px; height: 810px;" align = "center" alt="Select Your Vehicle" title="Keyart-web" src="https://user-images.githubusercontent.com/18518060/39225017-1bf9008c-4818-11e8-9865-1f62c78355e6.png">
 
 <a href="https://sccapstone.github.io/PowerSwitchCoders/about" title="About Page"> About Our Team </a>
