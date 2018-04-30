@@ -320,7 +320,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c6d404c8cacd4242ab6d8990b4c3e9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unlockNumber: 1
+  unlockNumber: 2
 --- !u!114 &196324640
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -893,7 +893,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 576, y: -1489}
+  m_AnchoredPosition: {x: 576, y: -1514}
   m_SizeDelta: {x: 750, y: 180}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &405688776
@@ -1249,7 +1249,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 3 - Columbia, SC
+  m_Text: 3 - San Diego, CA
 --- !u!222 &530833183
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2799,7 +2799,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 5 - San Diego, CA
+  m_Text: '5 - St Louis, MO
+
+'
 --- !u!222 &995126755
 CanvasRenderer:
   m_ObjectHideFlags: 0

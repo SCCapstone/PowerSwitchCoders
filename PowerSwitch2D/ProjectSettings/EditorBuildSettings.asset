@@ -20,3 +20,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Levels/TestLevel_SanDiego_2.unity
     guid: 442c22bf6fc024a4cafa0e3428de54f3
+  - enabled: 1
+    path: Assets/Levels/TestLevel_StLouis.unity
+    guid: 150004c175352834597317843246fda1
