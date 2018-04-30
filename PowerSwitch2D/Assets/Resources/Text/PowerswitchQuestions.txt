@@ -1,0 +1,55 @@
+What is the ultimate energy source for the earth?;The Sun;The Ocean
+Wind energy is renewable.;True;False
+Oil/Deisel/Gasoline is renewable.;False;True
+Coal is renewable.;False;True
+Solar Energy is renewable.;True;False
+What is the problem with Wind Power?;It's not always windy.;It creates waste.
+It takes more energy to make a new aluminum can than it does to recycle one.;True;False
+Recycling one aluminum can can power a computer for two hours.;True;False
+A TV uses electricity even when it's off.;True;False
+What produces solar energy?;The sun.;The air.
+What is energy from food measured in?;Calories;Watts;Gallons
+Kinetic energy is "energy at rest".;False;True
+Swinging a baseball bat is...?;Kinetic Energy;Potential Energy
+Heat energy found towards the center of the earth is called Geothermal Energy.;True;False
+What is equivalent to 1 Kilowatt?;1000 Watts;10 Watts;100 Watts
+How long does it take for the sun's rays to reach earth?;8 minutes;18 minutes;8 days
+A battery transforms chemical energy to mechanical energy.;False;True
+Energy cannot be created or destroyed.;True;False
+Energy cannot be transformed from one form to another.;False;True
+In 2010, which used the most energy in American homes?;Heating/Cooling;Lighting;Water Heating;Refrigerator
+What is CO2?;Carbon Dioxide;Water
+In 2015, the biggest source of electricity in the US was...;Coal;Oil;Renewables;Nuclear
+How do plants get energy from sunlight?;Photosynthesis;Electrolysis;Oxygenation
+In 2015, how much electricity did the US produce from renewables?;13%;3%;33%
+In 2014, how much electricity did lighting in the US consume?;11%;1%;41%;61%
+Global warming is about what gas in the atmosphere?;Carbon Dioxide;Ozone;Sulfur Dioxide;Nitrous Oxide
+Solar, biomass, wind, and hydropower energy are all renewable.;True;False
+What percentage of the world's coal reserves is in the US?;28%;8%;58%
+What energy source provides the most renewable energy in the US?;Hydropower;Solar;Wind;Biomass
+Where is the world's largest solar power plant located?;Mojave Desert;Sahara Desert;Gobi Desert
+In terms of electricity, what does 'DC' stand for?;Direct Current;Direct Calculation;Diverse Current
+Which type of energy involves splitting atoms?;Nuclear Energy;Solar Energy
+A sail boat uses what type of energy?;Wind;Solar;Wave
+What gives a person energy?;Food;Air
+Energy made from quick producing sources is called...;Renewable Energy;Clean Energy
+Hydroelectric energy is produces by...;The Sun;Water
+Tidal energy is efficient.;True;False
+Which energy is renewable?;Solar;Coal;Natural Gas;Oil
+The Sun is the closest star to the earth.;True;False
+How do humans get energy?;Food;Sun;Water;Air
+Where does energy from food originate?;The Sun;Vegetables;Meat;Sugar
+Diesel/Gasoline is produced from which fossil fuel?;Petroleum;Natural Gas;Coal;Propane
+How is Diesel NOT transported?;Wires;Trucks;Ships;Pipes
+Wind turbines need 4-12 mph winds to generate energy;True;False
+'Power' is the rate at which energy is converted.;True;False
+What country produces the most coal?;China;Russia;United States;Australia
+When burning coal, how much energy turns into electricity?;1/3;1/2;3/4;9/10
+The BNC Charger System uses clean energy.;True;False
+The BNC Charger System converts wasted energy to usable energy.;True;False
+What is the purest type of coal?;Anthracite;Lignite;Bituminous;Subbituminous
+What are fossil fuels made from?;Very old plants and animals.;Chemicals;A Barbeque.
+Natural Gas is renewable.;False;True
+'Heat' is a type of energy.;True;False
+Where is the best wind energy found?;High in the air.;Low to the ground.
+Where is the largest hydroelectric facility in the US?;Hoover Dam;Grand Coulee Dam;Niagra Falls;Hells Canyon Dam
