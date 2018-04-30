@@ -13,6 +13,8 @@ public class GUIHandler : MonoBehaviour {
     public GameObject WinScreen;
     public GameObject audioHandler;
     public int unlockNumber;
+    public GameObject questionsPanel;
+
     private AudioSource audioSource;
     private bool done = false;
 
@@ -34,6 +36,8 @@ public class GUIHandler : MonoBehaviour {
         {
             if (PlayerPrefs.GetInt("unlock", 0) < unlockNumber)
                 PlayerPrefs.SetInt("unlock", unlockNumber);
+
+            questionsPanel.GetComponent<Questions>().askQuestion();
 
             WinScreen.SetActive(true);
             //powerPointPanel.gameObject.SetActive(false);
