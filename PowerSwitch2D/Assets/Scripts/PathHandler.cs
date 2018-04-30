@@ -115,10 +115,10 @@ public class PathHandler : MonoBehaviour {
                     if (i <= playerPaths.Length)
                     {
                         playerPaths.SetValue(newPath, i);
-                        AddTravelTime(newPath);
-                        int dist = newPath.travelDistance;
-                        float speed = newPath.travelSpeed;
-                        float cost = CheckCost(dist, speed);
+                        //AddTravelTime(newPath);
+                        //int dist = newPath.travelDistance;
+                        //float speed = newPath.travelSpeed;
+                        //float cost = CheckCost(dist, speed);
                         //pickedPathCost += cost; //problem, pickedpathcost will always increase even if you pick a new path
                         pCursor++;
                         break;
@@ -142,8 +142,11 @@ public class PathHandler : MonoBehaviour {
                 pickedPathCost = 0;
                 return false;
             }
+            AddTravelTime(path);
             pickedPathCost += CheckCost(path.travelDistance, path.travelSpeed);
         }
+        Debug.Log(pickedPathCost);
+        Debug.Log(trueDistance);
         return true;
     }
 
@@ -208,13 +211,16 @@ public class PathHandler : MonoBehaviour {
 
     public bool CheckWinningPath()
     {
+        /*
         float playerCost = 0;
         for (int i = 0; i < playerPaths.Length; i++)
         {
             playerCost += playerFuels[i] * (playerPaths[i].travelDistance / playerPaths[i].travelSpeed);
             pickedPathCost = playerCost;
         }
-        Debug.Log(playerCost);
+        */
+        float playerCost = pickedPathCost;
+        //Debug.Log(playerCost);
         if ( Mathf.Floor(playerCost) > powerPoints)
         {
             //Debug.Log("This path will FAIL");
