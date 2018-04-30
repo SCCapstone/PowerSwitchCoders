@@ -23,47 +23,12 @@ public class PathRunner : MonoBehaviour {
     void Start () {
         pathCursor = 0;
 	}
-	
-	// Update is called once per frame
-	void Update () {
-        /*
-        if (Time.time >= nextUpdate)
-        {
-            nextUpdate = Time.time + nextUpdate;
-            //FuelBurnTest();
-        }
-        */
-    }
 
-    /*
-    void FuelBurnTest()
+    // Update is called once per frame
+    void Update()
     {
-        int points = dataHandler.powerPoints;
-        points -= 5;
-        dataHandler.updatePowerPoints(points);
-    }
-    */
-    /*
-    public MovementPath OldPowerSwitch()
-    {
-        
-        if (pathCursor >= pathHandler.playerPaths.Length)
-        {
-            int lastPath = pathHandler.playerPaths.Length;
-            newPath = pathHandler.playerPaths[lastPath];
-            EndGame(true);
-            if (newPath == null)
-            {
-                Debug.Log("Critical Failure");
-            }
-            return newPath;
-        }
 
-        newPath = pathHandler.playerPaths[pathCursor];
-        pathCursor++;
-        return newPath;
     }
-    */
     public void PowerSwitch()
     {
         if (pathCursor >= pathHandler.playerPaths.Length)
@@ -95,16 +60,15 @@ public class PathRunner : MonoBehaviour {
 
     public bool WinGame()
     {
-        //either win or lose, true or false
-        //Time.timeScale = 0.0f;
+        //Either win or lose, true or false
         return hasWon;
     }
 
     public void Explode()
     {
-        //Make Boom
+        //Make Boom object
         GameObject newBoom = Instantiate(boom, playerMover.transform.position, Quaternion.identity);
-        //Destroy Boom
+        //Destroy Boom object
         Destroy(newBoom, 2.0f);
     }
 }

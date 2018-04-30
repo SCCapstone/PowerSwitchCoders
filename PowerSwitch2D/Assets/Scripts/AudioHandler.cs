@@ -10,13 +10,13 @@ public class AudioHandler : MonoBehaviour {
     public Slider VolumeSlider;
     public AudioSource Music;
     private GameObject hitOBJ;
-    //public AudioListener Game;
 	// Use this for initialization
 	void Start () {
         VolumeSlider.onValueChanged.AddListener(delegate { UpdateVolume(); });
         //Check if player has already set volume before, and if so, adjust music to that volume
         if (PlayerPrefs.HasKey("MusicVolume"))
         {
+            //Set the Music Volume and current Game Volume
             Music.volume = VolumeSlider.value = PlayerPrefs.GetFloat("MusicVolume");
             AudioListener.volume = VolumeSlider.value;  //Control Global game volume
         }
@@ -24,13 +24,14 @@ public class AudioHandler : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        //Music.volume = 
+        //Detect any and all button clicks
         if (Input.GetButtonDown ("Fire1"))
         {
             if (EventSystem.current.IsPointerOverGameObject())
             {
-                //Debug.Log("Found Something");
+                //Retrieve struck object
                 hitOBJ = EventSystem.current.currentSelectedGameObject;
+                //Check we hit a button, if so, play the button click sound
                 if (hitOBJ != null && hitOBJ.GetComponent<Button>() != null)
                 {
                     if (hitOBJ.GetComponent<Button>().isActiveAndEnabled)
@@ -44,14 +45,13 @@ public class AudioHandler : MonoBehaviour {
                 }
             }
         }
-        //audioSource.PlayOneShot((AudioClip)Resources.Load("Sound/UISounds/ButtonPress"));
     }
 
+    //Update volume based on volume slider
     public void UpdateVolume ()
     {
         Music.volume = VolumeSlider.value;
         AudioListener.volume = VolumeSlider.value;
-        //Possibly move this "save preferred volume" code to when user exits the settings menu
         PlayerPrefs.SetFloat("MusicVolume", VolumeSlider.value);
     }
 }

@@ -115,11 +115,6 @@ public class PathHandler : MonoBehaviour {
                     if (i <= playerPaths.Length)
                     {
                         playerPaths.SetValue(newPath, i);
-                        //AddTravelTime(newPath);
-                        //int dist = newPath.travelDistance;
-                        //float speed = newPath.travelSpeed;
-                        //float cost = CheckCost(dist, speed);
-                        //pickedPathCost += cost; //problem, pickedpathcost will always increase even if you pick a new path
                         pCursor++;
                         break;
                     } else

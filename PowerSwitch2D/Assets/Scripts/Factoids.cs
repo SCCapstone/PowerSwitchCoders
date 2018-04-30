@@ -28,16 +28,13 @@ public class Factoids : MonoBehaviour {
         , "Wind and Solar Energy are Renewable Energies", "Energy from food is measured in Calories or Joules", "The Sun's rays take 8 minutes to reach Earth",
             "In 2010, heating & cooling used the most energy in American homes", "In 2015, the largest source of electrical energy in the US was Coal",
             "Approximately 28% of the world's coal reserves are located within the US", "The world's largest solar power plant is located in the Mojave Desert, USA"};
-        //Debug.Log(Time.time);
 	}
 
     // Update is called once per frame
     void Update() {
-        //Random Number With 1/3 Chance of Popping up a question (theoretically)
         //Will only activate after 15 seconds of game time, while the Fact Screen is off, and with the popupRate factored in as a delay between fact popups
-        //Debug.Log(Time.time);
 
-        //if (Time.time > nextCheckTime && Time.time >= 5.0f && 0.1 == Random.Range(0.0f,0.1f) && FactScreen.activeSelf == false)
+        //If enough time has passed, start activating fact screen
         if (Time.time > nextCheckTime && Time.time >= 15.0f && FactScreen.activeSelf == false)
         {
             nextCheckTime = Time.time + popupRate;

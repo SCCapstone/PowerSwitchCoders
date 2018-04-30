@@ -14,11 +14,15 @@ public class GUIHandler : MonoBehaviour {
     public GameObject audioHandler;
     public int unlockNumber;
     public GameObject questionsPanel;
+    public GameObject[] buttons;
 
     private AudioSource audioSource;
     private bool done = false;
 
     // Use this for initialization
+    /// <summary>
+    /// Init the audio source
+    /// </summary>
     void Start () {
         audioSource = audioHandler.GetComponent<AudioSource>();
     }
@@ -39,27 +43,25 @@ public class GUIHandler : MonoBehaviour {
 
             questionsPanel.GetComponent<Questions>().askQuestion();
 
-            WinScreen.SetActive(true);
-            //powerPointPanel.gameObject.SetActive(false);
-            
+            WinScreen.SetActive(true);            
             audioSource.Stop();
             audioSource.loop = true;
             audioSource.PlayOneShot((AudioClip)Resources.Load("Sound/Winning/Sample1"));
             
-            //audioSource.pl
             Time.timeScale = 0.0f;
             done = true;
         }
 	}
 
+    //Play Level Function, checks if the level is ready to start
     public void PlayLevel()
     {
-        //if (pathHandler.canStart)
         if (pathHandler.CheckStart())
         {
             powerPointPanel.DoUpdate();
             pathRunner.PowerSwitch();
             playButton.SetActive(false);
+            ButtonsOff();
             playerVeh.SetActive(true);
 
         }
@@ -70,5 +72,13 @@ public class GUIHandler : MonoBehaviour {
         WinScreen.SetActive(true);
         Debug.Log("You win");
         
+    }
+
+    public void ButtonsOff()
+    {
+        foreach (GameObject button in buttons)
+        {
+            button.SetActive(false);
+        }
     }
 }

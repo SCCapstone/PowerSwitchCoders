@@ -37,7 +37,6 @@ public class DataHandler : MonoBehaviour {
 
     void Start () {
         //Awake is called first
-        //RandomizeCosts();
 	}
 	
 	// Update is called once per frame
@@ -47,13 +46,14 @@ public class DataHandler : MonoBehaviour {
 
     void RandomizeCosts()
     {
+        //Randomize costs based on variance
         manCost += Random.Range(-variance, variance);
         windCost += Random.Range(-variance, variance);
         electricCost += Random.Range(-variance, variance);
         oilCost += Random.Range(-variance, variance);
         coalCost += Random.Range(-variance, variance);
 
-        //
+        //Update the actual display text with the new int values
         manText.text = manCost.ToString();
         windText.text = windCost.ToString();
         electricText.text = electricCost.ToString();
@@ -61,17 +61,20 @@ public class DataHandler : MonoBehaviour {
         coalText.text = coalCost.ToString();
     }
 
+    //Update power points offsite function - deprecated
     public void UpdatePowerPoints(int newValue)
     {
         powerPoints = newValue;
     }
 
+    //Reset the current level
     public void ReloadScene()
     {
         Scene currentScene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(currentScene.name);
     }
 
+    //Update the actual cost text from stored ints
     private void UpdateCostText()
     {
         manText.text = manCost.ToString();

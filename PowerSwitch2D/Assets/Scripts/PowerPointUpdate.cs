@@ -27,9 +27,6 @@ public class PowerPointUpdate : MonoBehaviour {
     private float endVal;
     private bool textUpdate = false;
     private bool hasLost = false;
-    //https://answers.unity.com/questions/122349/how-to-run-update-every-second.html    
-    //do above
-
 
     //GIZMOS
     public void OnDrawGizmos()
@@ -86,18 +83,19 @@ public class PowerPointUpdate : MonoBehaviour {
 
     public void DoUpdate()
     {
-        //Do check for failiing or winning path here -  if failing, run out of power 2 seconds before pathtime
-        //If winning, don't 
+        //Do check for failiing or winning path here -  if failing, run out of power 3.0 seconds before pathtime
+        //If winning, complete level with some power points remaining
         pathCost = pathHandler.pickedPathCost;
         pathTime = pathHandler.GetTravelTime();
         endVal = powerPoints - pathCost;
+        //Fix for negative values
         if (endVal <= 0.0f)
         {
             endVal = 0.0f;
         }
         bool willWin = pathHandler.CheckWinningPath();
-        //15 seconds for now
-        //StartCoroutine(AnimateSliderOverTime(15.0f));
+
+        //Check winning curve or losing curve and start moving towards 0 or some # over the estimated travel time for the picked path
         if (willWin)
         {
             StartCoroutine(AnimateSliderOverTime(pathTime));
@@ -116,6 +114,7 @@ public class PowerPointUpdate : MonoBehaviour {
         pPoints.text = (Mathf.Floor(100 * (pSlider.value / pSlider.maxValue))).ToString();
 
         //PowerPoints below 50%
+        //Adjust Icon and Bar color to Yellow
         if (count == 0 && powerPoints <= (pSlider.maxValue/2))
         {
             pFill.color = Cyellow;
@@ -124,6 +123,7 @@ public class PowerPointUpdate : MonoBehaviour {
             count = 1;
         }
         //PowerPoints below 25%
+        //Adjust Icon and Bar color to Red
         if (count == 1 && powerPoints <= (pSlider.maxValue / 4))
         {
             pFill.color = Cred;
@@ -146,6 +146,7 @@ public class PowerPointUpdate : MonoBehaviour {
         }
     }
 
+    //Lost game offsite check
     public bool LostGame()
     {
         return hasLost;
