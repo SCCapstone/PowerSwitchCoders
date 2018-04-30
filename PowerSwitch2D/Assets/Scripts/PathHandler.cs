@@ -90,11 +90,6 @@ public class PathHandler : MonoBehaviour {
         string fuelChoice = fuelTypes[choice];
         int nextFuel = FuelSetter(fuelChoice);
         playerFuels.SetValue(nextFuel, pCursor);
-        //Debug.Log(fuelChoice+nextFuel);
-
-        //int nextFuel = FuelSetter(fuel);
-        //playerFuels.SetValue(nextFuel, pCursor);
-        
 
         pCursor++;
         if (pCursor >= playerPaths.Length)
@@ -106,6 +101,50 @@ public class PathHandler : MonoBehaviour {
             //Player is done picking, calculate if their path will win or not using above IF
             //Also activate car sprite and set to correct value based on path, but don't move it yet
         }
+    }
+
+    public void PickPathNew(MovementPath newPath)
+    {
+        if (newPath != null)
+        {
+            string choice = newPath.pathJoint.ToString();
+            for (int i = 0; i < pathJoints.Length; i++) 
+            {
+                if (choice == pathJoints[i])
+                {
+                    if (i <= playerPaths.Length)
+                    {
+                        playerPaths.SetValue(newPath, i);
+                        AddTravelTime(newPath);
+                        int dist = newPath.travelDistance;
+                        float speed = newPath.travelSpeed;
+                        float cost = CheckCost(dist, speed);
+                        //pickedPathCost += cost; //problem, pickedpathcost will always increase even if you pick a new path
+                        pCursor++;
+                        break;
+                    } else
+                    {
+                        Debug.Log("Value Too Large");
+                    }
+                }
+            }
+        }
+        
+        //if (newPath.pathJoint.ToString() == "AB")
+    }
+
+    public bool CheckStart()
+    {
+        foreach (MovementPath path in playerPaths)
+        {
+            if (path == null)
+            {
+                pickedPathCost = 0;
+                return false;
+            }
+            pickedPathCost += CheckCost(path.travelDistance, path.travelSpeed);
+        }
+        return true;
     }
 
     //Frontload instead?
@@ -189,6 +228,11 @@ public class PathHandler : MonoBehaviour {
         }
         
             
+    }
+
+    public float CheckCost(int dist, float speed)
+    {
+        return ((dist+0.0f) / speed)*10.0f;
     }
 
     void AddTravelTime(MovementPath travelPath)

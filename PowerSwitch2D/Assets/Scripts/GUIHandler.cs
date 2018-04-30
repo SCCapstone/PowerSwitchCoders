@@ -50,7 +50,8 @@ public class GUIHandler : MonoBehaviour {
 
     public void PlayLevel()
     {
-        if (pathHandler.canStart)
+        //if (pathHandler.canStart)
+        if (pathHandler.CheckStart())
         {
             powerPointPanel.DoUpdate();
             pathRunner.PowerSwitch();

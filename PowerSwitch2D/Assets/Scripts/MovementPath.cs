@@ -11,6 +11,15 @@ public class MovementPath : MonoBehaviour
         linear,
         loop
     }
+    public enum PathJoint
+    {
+        AB,
+        BC,
+        CD,
+        DE,
+        EF
+    }
+
     #endregion //Enums
 
     #region Public Variables
@@ -25,6 +34,12 @@ public class MovementPath : MonoBehaviour
     public Sprite linkedSprite;
     public float travelSpeed = 1.0f;
     public int travelDistance = 10;
+
+    [Header("Path Joint")]
+    [Tooltip("Stores the path joints")]
+    public PathJoint pathJoint;
+    //public int cost = 10;
+    
     //public GameObject levelHandler;
     #endregion //Public Variables
 
