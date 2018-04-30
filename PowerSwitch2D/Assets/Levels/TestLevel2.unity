@@ -3311,7 +3311,7 @@ Prefab:
     - target: {fileID: 114174967634055944, guid: b91cb41e278ad8c479078d1f1edffec0,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224648123316026932, guid: b91cb41e278ad8c479078d1f1edffec0,
         type: 2}
@@ -5039,12 +5039,12 @@ Prefab:
     - target: {fileID: 114855480590623570, guid: 882a0c643cc1aef479c4268f11e42148,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114811792186872454, guid: 882a0c643cc1aef479c4268f11e42148,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224089503752726328, guid: 882a0c643cc1aef479c4268f11e42148,
         type: 2}
