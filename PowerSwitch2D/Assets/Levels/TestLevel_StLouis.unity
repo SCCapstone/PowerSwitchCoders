@@ -813,6 +813,7 @@ MonoBehaviour:
   linkedSprite: {fileID: 21300000, guid: 432e67e7bb6e02345847d3b04dcba0ff, type: 3}
   travelSpeed: 1
   travelDistance: 10
+  pathJoint: 0
 --- !u!4 &149034521
 Transform:
   m_ObjectHideFlags: 0
@@ -1643,6 +1644,7 @@ MonoBehaviour:
   linkedSprite: {fileID: 21300000, guid: cb9c7ab75732dc2439d7ec51528b0e89, type: 3}
   travelSpeed: 1
   travelDistance: 10
+  pathJoint: 3
 --- !u!4 &596765114
 Transform:
   m_ObjectHideFlags: 0
@@ -1727,6 +1729,7 @@ MonoBehaviour:
   linkedSprite: {fileID: 21300000, guid: 432e67e7bb6e02345847d3b04dcba0ff, type: 3}
   travelSpeed: 1
   travelDistance: 10
+  pathJoint: 3
 --- !u!4 &626489474
 Transform:
   m_ObjectHideFlags: 0
@@ -2630,6 +2633,7 @@ MonoBehaviour:
   linkedSprite: {fileID: 21300000, guid: cb9c7ab75732dc2439d7ec51528b0e89, type: 3}
   travelSpeed: 1
   travelDistance: 10
+  pathJoint: 1
 --- !u!4 &843563319
 Transform:
   m_ObjectHideFlags: 0
@@ -3136,6 +3140,7 @@ MonoBehaviour:
   linkedSprite: {fileID: 21300000, guid: cb9c7ab75732dc2439d7ec51528b0e89, type: 3}
   travelSpeed: 1
   travelDistance: 10
+  pathJoint: 0
 --- !u!4 &965095691
 Transform:
   m_ObjectHideFlags: 0
@@ -3859,6 +3864,7 @@ MonoBehaviour:
   linkedSprite: {fileID: 21300000, guid: 7dde6004e98375043a2aa3b9620f7849, type: 3}
   travelSpeed: 1
   travelDistance: 10
+  pathJoint: 1
 --- !u!4 &1298883016
 Transform:
   m_ObjectHideFlags: 0
@@ -4944,6 +4950,7 @@ MonoBehaviour:
   linkedSprite: {fileID: 21300000, guid: d965e1ffc13968e4db56c12f5643bfd0, type: 3}
   travelSpeed: 1
   travelDistance: 10
+  pathJoint: 1
 --- !u!1001 &1718867318
 Prefab:
   m_ObjectHideFlags: 0

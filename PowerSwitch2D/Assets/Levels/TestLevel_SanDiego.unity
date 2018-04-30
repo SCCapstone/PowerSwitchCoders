@@ -3494,7 +3494,7 @@ MonoBehaviour:
   pathRunner: {fileID: 1092962312}
   linkedSprite: {fileID: 21300000, guid: d965e1ffc13968e4db56c12f5643bfd0, type: 3}
   travelSpeed: 1
-  travelDistance: 10
+  travelDistance: 5
   pathJoint: 1
 --- !u!1 &397747594
 GameObject:
@@ -6334,7 +6334,7 @@ MonoBehaviour:
   pathRunner: {fileID: 1092962312}
   linkedSprite: {fileID: 21300000, guid: c2bd2b83d2c3fc04e84d6144d0ed249f, type: 3}
   travelSpeed: 1.2
-  travelDistance: 10
+  travelDistance: 6
   pathJoint: 0
 --- !u!1 &653583159
 GameObject:
@@ -7047,11 +7047,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 08e50acb0674c234b9ef1013c20ff250, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &737243686 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1686676999561018, guid: 08e50acb0674c234b9ef1013c20ff250,
-    type: 2}
-  m_PrefabInternal: {fileID: 737243685}
 --- !u!114 &737243687 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114197382392216246, guid: 08e50acb0674c234b9ef1013c20ff250,
@@ -7382,7 +7377,7 @@ MonoBehaviour:
   pathRunner: {fileID: 1092962312}
   linkedSprite: {fileID: 21300000, guid: c2bd2b83d2c3fc04e84d6144d0ed249f, type: 3}
   travelSpeed: 1
-  travelDistance: 10
+  travelDistance: 5
   pathJoint: 2
 --- !u!1 &790334982
 GameObject:
@@ -9582,7 +9577,7 @@ MonoBehaviour:
   pathRunner: {fileID: 1092962312}
   linkedSprite: {fileID: 21300000, guid: cb9c7ab75732dc2439d7ec51528b0e89, type: 3}
   travelSpeed: 1
-  travelDistance: 10
+  travelDistance: 5
   pathJoint: 1
 --- !u!1 &1058753795
 GameObject:
@@ -10096,6 +10091,11 @@ Transform:
   m_Father: {fileID: 312511599}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1124730069 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1686676999561018, guid: 08e50acb0674c234b9ef1013c20ff250,
+    type: 2}
+  m_PrefabInternal: {fileID: 737243685}
 --- !u!1 &1143050979
 GameObject:
   m_ObjectHideFlags: 0
@@ -11352,7 +11352,37 @@ Prefab:
         type: 2}
       propertyPath: playerVeh
       value: 
-      objectReference: {fileID: 737243686}
+      objectReference: {fileID: 1124730069}
+    - target: {fileID: 114446215351012872, guid: 8f354317c8b285745b4afde355b24123,
+        type: 2}
+      propertyPath: manCost
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114446215351012872, guid: 8f354317c8b285745b4afde355b24123,
+        type: 2}
+      propertyPath: windCost
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 114446215351012872, guid: 8f354317c8b285745b4afde355b24123,
+        type: 2}
+      propertyPath: electricCost
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 114446215351012872, guid: 8f354317c8b285745b4afde355b24123,
+        type: 2}
+      propertyPath: oilCost
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 114446215351012872, guid: 8f354317c8b285745b4afde355b24123,
+        type: 2}
+      propertyPath: coalCost
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 114446215351012872, guid: 8f354317c8b285745b4afde355b24123,
+        type: 2}
+      propertyPath: powerPoints
+      value: 160
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8f354317c8b285745b4afde355b24123, type: 2}
   m_IsPrefabParent: 0
