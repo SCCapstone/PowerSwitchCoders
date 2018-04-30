@@ -2209,7 +2209,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Columbia, SC
+  m_Text: San Diego, CA
 --- !u!222 &272862980
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11296,7 +11296,7 @@ Prefab:
     - target: {fileID: 114610851831885832, guid: 8f354317c8b285745b4afde355b24123,
         type: 2}
       propertyPath: unlockNumber
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 114293401966944022, guid: 8f354317c8b285745b4afde355b24123,
         type: 2}
@@ -11718,7 +11718,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 3
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -14554,7 +14554,7 @@ GameObject:
   - component: {fileID: 1529081674}
   - component: {fileID: 1529081675}
   m_Layer: 0
-  m_Name: NavMarker (1)
+  m_Name: NavMarker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14610,7 +14610,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 54d29889925dbfd4fb6e0601b19e712c, type: 3}
-  m_Color: {r: 0.050980397, g: 0.6, b: 0.83921576, a: 1}
+  m_Color: {r: 0.12156863, g: 0.7294118, b: 0.9764706, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
