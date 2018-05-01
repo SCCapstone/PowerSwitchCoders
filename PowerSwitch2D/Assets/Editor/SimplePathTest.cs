@@ -17,13 +17,13 @@ public class SimplePathTest {
 		// Use the Assert class to test conditions.
 		// yield to skip a frame
 
-        var currentVehicle = GameObject.FindWithTag("Vehicle");
+        var currentVehicle = GameObject.Find("PlayerMover");
         var currentSpeed = currentVehicle.GetComponent<FollowPath>().Speed;
 
         //yield return new WaitForSeconds(5.0f);
         yield return null;
 
-        Assert.Greater(currentSpeed, 0.0f);
+        Assert.AreEqual(currentSpeed, 0.0f);
 
 		
 	}
