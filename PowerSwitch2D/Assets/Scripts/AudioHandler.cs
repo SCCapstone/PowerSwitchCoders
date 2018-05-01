@@ -40,7 +40,7 @@ public class AudioHandler : MonoBehaviour {
                     }
                     else
                     {
-                        //Play error sound
+                        Music.PlayOneShot((AudioClip)Resources.Load("Sound/UISounds/ButtonError"));
                     }
                 }
             }
