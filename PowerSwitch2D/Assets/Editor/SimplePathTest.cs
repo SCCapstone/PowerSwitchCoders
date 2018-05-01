@@ -28,11 +28,4 @@ public class SimplePathTest {
 		
 	}
 
-    //[UnityTest]
-    //Unity behavioral test ensuring that the FollowPath.cs code reliably finds the next point in an editor-defined path
-    //public IEnumerator CanFindNextPointOnPath()
-    //{
-        
-    //    yield return null;
-    //}
 }
