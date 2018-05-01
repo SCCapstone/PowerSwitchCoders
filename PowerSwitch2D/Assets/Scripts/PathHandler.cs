@@ -74,7 +74,7 @@ public class PathHandler : MonoBehaviour {
 
 
 	void Update () {
-        //do PowerPoints text value update here, along with possible other effects, and win/fail handling
+        
 	}
 
     //Player fills the array of their chosen paths as they pick a vehicle at each point 
@@ -103,6 +103,7 @@ public class PathHandler : MonoBehaviour {
         }
     }
 
+    //Newest PickPath function, allowing choices to be changed, at suggestion of QA
     public void PickPathNew(MovementPath newPath)
     {
         if (newPath != null)
@@ -114,6 +115,7 @@ public class PathHandler : MonoBehaviour {
                 {
                     if (i <= playerPaths.Length)
                     {
+                        //If the path matches a valid one and isnt' null, add it to the player's array of choices
                         playerPaths.SetValue(newPath, i);
                         pCursor++;
                         break;
@@ -125,9 +127,9 @@ public class PathHandler : MonoBehaviour {
             }
         }
         
-        //if (newPath.pathJoint.ToString() == "AB")
     }
 
+    //Check if game can start
     public bool CheckStart()
     {
         foreach (MovementPath path in playerPaths)
@@ -140,12 +142,12 @@ public class PathHandler : MonoBehaviour {
             AddTravelTime(path);
             pickedPathCost += CheckCost(path.travelDistance, path.travelSpeed);
         }
-        Debug.Log(pickedPathCost);
-        Debug.Log(trueDistance);
+        //Debug.Log(pickedPathCost);
+        //Debug.Log(trueDistance);
         return true;
     }
 
-    //Frontload instead?
+    //Deprecated code used to locate a particular picked path via the GameObject.Find function (very perf heavy)
     MovementPath PathFinder(string currentMover)
     {
         if (currentMover == null)
@@ -166,7 +168,7 @@ public class PathHandler : MonoBehaviour {
         return newMove;
     }
 
-    //This.... not great 
+    //Deprecated code to translate the player's path choice fuel type
     int FuelSetter(string fuelType)
     {
         if (fuelType == null)
@@ -200,42 +202,35 @@ public class PathHandler : MonoBehaviour {
             return coalCost;
         }
 
-        //BAD 
+        //Critical Failure
         return 0;
     }
 
+    //Check if the player has picked a winning combination of paths
     public bool CheckWinningPath()
     {
-        /*
-        float playerCost = 0;
-        for (int i = 0; i < playerPaths.Length; i++)
-        {
-            playerCost += playerFuels[i] * (playerPaths[i].travelDistance / playerPaths[i].travelSpeed);
-            pickedPathCost = playerCost;
-        }
-        */
         float playerCost = pickedPathCost;
         //Debug.Log(playerCost);
         if ( Mathf.Floor(playerCost) > powerPoints)
         {
             //Debug.Log("This path will FAIL");
-            //Debug.Log(playerCost);
             return false;
         } else
         {
             //Debug.Log("This path will PASS");
-            //Debug.Log(playerCost);
             return true;
         }
         
             
     }
 
+    //Check the cost of each path
     public float CheckCost(int dist, float speed)
     {
         return ((dist+0.0f) / speed)*10.0f;
     }
 
+    //Calculate the total real travel time (Unity uses meters/second) that the vehicle will be moving
     void AddTravelTime(MovementPath travelPath)
     {
         //
