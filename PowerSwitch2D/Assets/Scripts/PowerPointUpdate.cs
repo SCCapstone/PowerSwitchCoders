@@ -152,4 +152,9 @@ public class PowerPointUpdate : MonoBehaviour {
         return hasLost;
     }
 
+    public int getPowerPoints()
+    {
+        return (int)endVal;
+    }
+
 }

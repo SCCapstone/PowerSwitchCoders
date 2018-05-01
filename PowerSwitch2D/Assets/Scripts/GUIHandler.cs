@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GUIHandler : MonoBehaviour {
 
@@ -15,6 +16,8 @@ public class GUIHandler : MonoBehaviour {
     public int unlockNumber;
     public GameObject questionsPanel;
     public GameObject[] buttons;
+    public GameObject scoreText;
+    public string levelHandle;
 
     private AudioSource audioSource;
     private bool done = false;
@@ -41,7 +44,12 @@ public class GUIHandler : MonoBehaviour {
             if (PlayerPrefs.GetInt("unlock", 0) < unlockNumber)
                 PlayerPrefs.SetInt("unlock", unlockNumber);
 
-            questionsPanel.GetComponent<Questions>().askQuestion();
+            //Ask a question on win of enabled.
+            if(PlayerPrefs.GetInt("questions",1)==1)
+                questionsPanel.GetComponent<Questions>().askQuestion();
+
+            //Handle score
+            HandleScore();
 
             WinScreen.SetActive(true);            
             audioSource.Stop();
@@ -80,5 +88,33 @@ public class GUIHandler : MonoBehaviour {
         {
             button.SetActive(false);
         }
+    }
+
+    public void HandleScore()
+    {
+        //initial values
+        int finalScore = 0;
+        int topScore = 0;
+        bool isCorrect = questionsPanel.GetComponent<Questions>().isCorrect();
+        int finalPoints = powerPointPanel.getPowerPoints();
+
+        //determine final score
+        if (isCorrect)
+            finalScore = (int)(finalPoints + (finalPoints * 0.25)) * 10;
+        else
+            finalScore = finalPoints * 10;
+
+        //Determine top score
+        int oldTopScore = PlayerPrefs.GetInt(levelHandle, 0);
+        if (finalScore > oldTopScore)
+        {
+            PlayerPrefs.SetInt(levelHandle, finalScore);
+            topScore = finalScore;
+        }
+        else
+            topScore = oldTopScore;
+
+
+        scoreText.GetComponent<Text>().text = "Your Score: " + finalScore.ToString() + "\nTop Score: " + topScore.ToString();
     }
 }

@@ -12,9 +12,10 @@ public class Questions : MonoBehaviour {
     private System.Random rnd;
     private int correctIndex;
     private GameObject[] allBoxes;
+    private bool correct = false;
 
     //Game Object references
-    public GameObject questionsPanel, questionBox, answerBox1, answerBox2, answerBox3, answerBox4, correctPanel, incorrectPanel;
+    public GameObject questionsPanel, questionBox, answerBox1, answerBox2, answerBox3, answerBox4, correctPanel, incorrectPanel, GUIHandler;
 
 	// Use this for initialization
 	void Start () {
@@ -44,6 +45,7 @@ public class Questions : MonoBehaviour {
 
     public void askQuestion()
     {
+        correct = false;
         rnd = new System.Random();
         allBoxes = new GameObject[] { questionBox, answerBox1, answerBox2, answerBox3, answerBox4 };
         questionsList = new List<string[]>();
@@ -82,12 +84,20 @@ public class Questions : MonoBehaviour {
         //Question was answered correctly
         if(selectedAnswer == correctIndex)
         {
+            correct = true;
             correctPanel.SetActive(true);
+            GUIHandler.GetComponent<GUIHandler>().HandleScore();
         }
         else //question was answered incorrectly
         {
+            correct = false;
             incorrectPanel.SetActive(true);
         }
+    }
+
+    public bool isCorrect()
+    {
+        return correct;
     }
 
 }
