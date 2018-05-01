@@ -4145,7 +4145,9 @@ Prefab:
       propertyPath: costData
       value: 
       objectReference: {fileID: 1906104977}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114857108504688826, guid: be9ba5f4eecc08a4ba8b1d667cead49b, type: 2}
+    - {fileID: 114350364601104306, guid: be9ba5f4eecc08a4ba8b1d667cead49b, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: be9ba5f4eecc08a4ba8b1d667cead49b, type: 2}
   m_IsPrefabParent: 0
 --- !u!224 &1596143182 stripped

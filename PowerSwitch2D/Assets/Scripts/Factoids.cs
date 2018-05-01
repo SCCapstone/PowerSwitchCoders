@@ -20,14 +20,13 @@ public class Factoids : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        //ToDo: supplement this with streamreader so facts can be dynamically read in from a text file and stored in this array
-        //Unity/C# StreamReader info: https://support.unity3d.com/hc/en-us/articles/115000341143-How-do-I-read-and-write-data-from-a-text-file-
-        //Further Info: https://msdn.microsoft.com/en-us/library/system.io.streamreader(v=vs.110).aspx
-        //TextAsset: https://docs.unity3d.com/ScriptReference/TextAsset.html
+        //String array of all factoids in the game
         factArray = new string[] {"The Earth orbits around the Sun", "The fastest growing type of energy is Renewable Energy", "Power is the rate at which energy is converted"
         , "Wind and Solar Energy are Renewable Energies", "Energy from food is measured in Calories or Joules", "The Sun's rays take 8 minutes to reach Earth",
             "In 2010, heating & cooling used the most energy in American homes", "In 2015, the largest source of electrical energy in the US was Coal",
-            "Approximately 28% of the world's coal reserves are located within the US", "The world's largest solar power plant is located in the Mojave Desert, USA"};
+            "Approximately 28% of the world's coal reserves are located within the US", "The world's largest solar power plant is located in the Mojave Desert, USA",
+            "Wind Turbines need 4-12mph winds to produce energy", "Heat is a type of energy", "Global Warming is caused by excess Carbon Dioxide",
+            "Energy cannot be created or destroyed, only transferred" };
 	}
 
     // Update is called once per frame

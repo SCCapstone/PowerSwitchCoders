@@ -33,7 +33,7 @@ Which type of energy involves splitting atoms?;Nuclear Energy;Solar Energy
 A sail boat uses what type of energy?;Wind;Solar;Wave
 What gives a person energy?;Food;Air
 Energy made from quick producing sources is called...;Renewable Energy;Clean Energy
-Hydroelectric energy is produces by...;The Sun;Water
+Hydroelectric energy is produced by...;Water;The Sun
 Tidal energy is efficient.;True;False
 Which energy is renewable?;Solar;Coal;Natural Gas;Oil
 The Sun is the closest star to the earth.;True;False
